@@ -1,0 +1,15 @@
+{
+  "summary": "This training webinar provides a comprehensive guide to webcasting and videography best practices, covering preparation, equipment setup, audio and video troubleshooting, and streaming with Wirecast.",
+  "shortDescription": [
+    "The webinar introduces participants to the essentials of running professional webcasts and live video events, beginning with planning, preparation, and proper setup practices.",
+    "It walks through a complete studio-style setup, including cameras, tripods, microphones, mixers, and capture devices, as well as methods for clean audio and professional video framing.",
+    "Additionally, it provides a practical overview of using Wirecast software for broadcasting, highlighting troubleshooting tips, redundancy measures, and maintaining stream quality based on internet upload speeds."
+  ],
+  "longDescription": [
+    "This session opens with an overview of webcasting goals and the importance of preparation, emphasizing that careful planning removes most sources of stress during live events. Presenters Kevin and Sam guide participants through recommended gear and preview the skills covered in the training.",
+    "The core of the webinar focuses on the equipment required to produce a smooth webcast, including cameras, microphones, soundboards, cables, capture devices, and computers. Detailed demonstrations are provided on setting up a camera and tripod, ensuring balanced audio, and troubleshooting common technical issues such as weak signals, noise, or poor white balance.",
+    "The presenters explain practical techniques for improving video quality, such as compositional framing, adjusting focus, exposure, and gain, as well as monitoring audio with mixers. They highlight potential pitfalls and show how different inputs and settings can affect output results.",
+    "Another major portion of the training introduces Wirecast, the broadcasting software used to deliver streams. Attendees are shown how to set up profiles, manage camera and audio feeds, and leverage features like the Desktop Presenter for slide integration. Older versions of Wirecast are contrasted with newer capabilities for stability and quality assurance.",
+    "The webinar concludes with operational advice around streaming reliability, including network requirements, recommended upload speeds relative to encoding bitrates, and adaptive streaming considerations. The closing highlights redundant recording practices and provides reassurance that with preparation and monitoring, anyone can run a successful webcast."
+  ]
+}

@@ -1,0 +1,669 @@
+Greetings and salutations.
+Welcome to this training webinar on best practices in webcasting and videography,
+which we've titled Stranger Audio Visual, a Guide for Navigating the Upside-Down of Webcasting.
+This is a program with a Stranger Things theme that we will almost certainly be dropping
+immediately, so don't get too attached.
+My name is Kevin Berg, I'm the production and live events manager at InReach, and today
+my colleague and co-presenter Sam Dickinson and I will take you through the fast-paced
+fun-filled frenzy that is the wide world of webcasting.
+In this, the first of six chapters, we're going to preface this presentation with the
+promise that once this webinar ends, any worries or apprehensions you may have had regarding
+live streaming will mysteriously and magically vanish.
+What we'll cover today is not necessarily a novice approach, but more of a beginner level
+to somewhat advanced audio and camera basics in terms of preparation, troubleshooting,
+and best practices.
+Now I know many of you are no stranger, pun intended, to webcasting live events and have
+been doing it in some fashion for years and years and years, but we're here to tell you
+that, surprise, you've been doing it wrong, all wrong.
+Just kidding, you're doing a fantastic job, but as technology advances, so too can improvements
+be made in our methods.
+We'll go over some simple program launches using Wirecast, what to tell presenters and
+speakers to help the broadcast run smoothly, technical requirements that we recommend including
+internet and network connection speeds as it relates to your broadcasting needs, and
+lastly, a quick overview of what was addressed so that you can hopefully fare better than
+Barbara Holland did as you journey through the upside down of webcasting.
+This is our chance to impart some of the tried and true methods and approaches to running
+a successful webcast or videography event.
+Preparation is key, and you're going to hear me say this a lot, but I cannot stress enough
+that if you give yourself plenty of time to set up and test your equipment the day before,
+or at least a couple hours before the start of your event, you'll eliminate a lot of the
+needless worry that comes from last minute issues.
+This is how we like to operate all of our webcasts that we tech, so do your future self
+a favor and give yourself plenty of time.
+Just as a reminder, if you ever have any issues, feel free to reach out to either of us through
+our personal contact information, which you can see on the screen right now if it's an
+urgent matter, or you can email live at inreachce.com for other matters relating to live events.
+I usually try to be very thorough in these technical demonstrations, but for the sake
+of brevity and time considerations today, we will do our best to keep things nice and
+concise.
+So now, before I turn things over to Sam to walk us through a few basics of camera and
+audio setups, let's do a quick rundown of the equipment you'll need to run a webcast.
+Keep in mind, this is a fairly comprehensive list.
+Technology is so far advanced to the point where there are several smartphone applications
+available that allow you to run a webcast entirely from your mobile device.
+That being said, while all of these items are not absolutely necessary, we strongly
+recommend them because just because you can use a smartphone to run a webcast doesn't
+mean that you should use a smartphone to run a webcast.
+Let's begin, shall we?
+So first off, we're going to need a camera, preferably one with an HDMI port, or at the
+very least, composite video and RCA audio, also known as yellow, red, and white, and
+XLR audio inputs, and lastly, at least one memory card slot that allows you to record
+video to an SD card.
+This particular camera is a Panasonic AG-HMC150.
+You'll also need a good pair of headphones, a wired or wireless mic system, an HDMI cable,
+an HDMI to USB adapter, a soundboard or mixer, audio cables with male XLR to quarter inch
+connections, pre-formatted SD cards, backup batteries, a digital audio recorder, a tripod,
+an ethernet line, and optional composite video and RCA audio cables, along with a video
+audio to USB adapter if you're not using HDMI, and last but not least, a computer with broadcasting
+software installed.
+We recommend using Wirecast.
+It's been our application of choice for more than six years, but you may have something
+else that you'd like to try, and that's fine.
+So here's the minimum and recommended system requirements for running the latest version
+of Wirecast on both Mac and PC.
+And in case you missed it, we included a helpful PDF and links in the Materials tab that include
+all this information.
+You can go check it out at your leisure, so it's there for your reference.
+So real quick, I'm going to set up my tripod, loosening the tension screws and extending
+the legs to the appropriate height.
+You want to be able to have a stable base, but also have your camera position high enough
+to shoot above the heads of the audience sitting between you and your subject.
+Make sure that if the feet of your tripod have adjustable knobs at the bottom, you position
+those to the same height as well.
+Once I'm at the height I want, keep the leg locks unlocked, and then I'll use the bubble
+level on the head of the tripod to get a nice level shot.
+If your tripod does not have a bubble level, you can also use the vertical guides or just
+the edge of your frame as it appears in the LCD to line up the vertical line with some
+other truly vertical line in your environment, such as like a corner or the edge of a podium,
+something like that.
+Next, if you haven't already, plug in and power on your camera.
+Some of you utilize pan-tilt zoom or PTZ cameras that don't necessarily have this level of
+hands-on interaction, but if you're using equipment similar to this, it should be somewhat
+familiar.
+You want your camera in camera mode.
+You want to make sure that your audio inputs are configured correctly, we'll cover this
+more in a bit, and that you have the appropriate recording and AV output settings configured
+as well.
+We'll also go over focus, swipe balancing, f-stop, and all that here in a bit as well,
+but for now we'll just want to have an SD card inserted and formatted.
+Make sure that you've backed up any content from the card onto another device or hard
+drive before you format it, because it will permanently erase the content, so just be
+aware of that.
+This camera is ready to go, so now we'll connect the video and audio signals to our webcasting
+laptop using an HDMI to USB adapter shown here, but you might also use something like
+composite video and RCA audio, which also connects to a USB port via an adapter.
+I'm doing a full setup here, which from beginning to end takes about 20 minutes.
+If you're webcasting from your own studio or facility and have the setup more or less
+locked down and ready to go at all times, even better.
+Again, most equipment and setups are going to have slight variances, but concept and
+the end result will always be the same.
+Now that we have everything all set up and ready to go, before we dive into actually
+broadcasting, I'm going to have Sam go over some audio and camera troubleshooting.
+Sam, take it away.
+Hi, my name is Sam Dickinson, and within Reach, we're going to go over some basics for audio
+and camera setup.
+This will be your soundboard mixer.
+You'll have line one, your gain, your equalizer, high and low, and your volume for line one.
+You have your main mixer that controls the volume for the entire board, line two and
+three and four volume, and your headphones volume.
+For these purposes, we're only going to work with line one, and what you want to do is
+make sure that each one of these, your gain, your EQ, and your volume, all set on the U
+setting.
+This is a baseline setting that allows you to adjust the volume as necessary.
+When you're ready to go, plug in your XLR cable into line one, and you're always going
+to just set up a quarter inch into the left or right out.
+Place your line volume and main mix on U, just to give you a baseline, and from here
+you're ready to test your audio.
+Now, each person, each setup is going to be a little bit different.
+You can have a house audio.
+For this test, we're going to be using a wireless handheld mic system, and this will be your
+camera.
+If your camera has an XLR setting or XLR input, we usually set it to input two, which would
+be the bottom of this type of camera.
+Plug in your XLR cable and make sure that's firmly tightened.
+Now, you want to switch it over to the correct input.
+We have to change the settings to input two, so make sure that the input two is going to
+be receiving all the audio instead of input one.
+We turn on our wireless handheld mic, and once we do that, we can see levels in the
+viewer screen and also on our mixer.
+The main mix volume will raise it, and it will give you a higher output volume.
+You can change the volume with the main, and as you can see, it bumps up a lot more.
+Now, this is way too loud.
+A good baseline for this is to watch the lines right underneath the 1-100th symbol.
+If you do see a red line pop up, that means you need to definitely turn your volume down.
+So we'll quickly go over a couple of things to be mindful of when preparing audio for
+a live webcast or videography-only event.
+These are some helpful tips if you find yourself in a bind and are not getting good audio levels
+or maybe there's some buzz or hiss or that sort of thing coming through that you want
+to get rid of so your audio is nice and clean.
+Sticking with our previous setup, we've got the receiver from our wireless handheld microphone
+plugged into the XLR input number two on our camera, and as you can hear, I'm doing a sound
+check, and you can also see that I'm getting levels indicated by the level meter in the
+bottom left corner of the display screen.
+So let's say you find that you're not getting levels for some reason.
+The first thing I check is to make sure that all my connections are inserted all the way
+and are snug.
+Next we verify that all of our camera's channels and inputs were directed to input two.
+If you have channel one and channel two set to the internal mic setting, this will activate
+your camera's onboard built-in mic, which I recommend you avoid at all costs since this
+just picks up room audio and all that comes with it, background noises, people talking,
+clinking glasses, toilets flushing, slamming doors, etc.
+Having both channels set to the same input will ensure that you're getting stereo audio
+from the same source.
+You'll also want to make sure that whichever input is not being used is turned off.
+I recommend playing around with these settings whenever you have free time to familiarize
+yourself with your camera.
+Since I've got a mic level device plugged into the XLR input, I'll make sure that mic
+is selected on the input toggle switch on the front of the camera.
+Let's see what happens when I change the input.
+Switching from mic to line.
+As you can hear, the audio signal is still there, but it's incredibly weak.
+Let's change it back.
+The audio signal is back and we get levels again.
+Again, if your camera setup is different, you might need to do some investigating, but
+typically XLR inputs are pretty similar.
+Mic and line refer to the voltage of an audio signal.
+Wired and wireless microphones are typically connected to mic level inputs, while most
+audio devices like mixers and outputs of mic preamps use line level.
+A mic level input is typically a female XLR connection, like the one on this camera.
+A line level input is typically an RCA jack, a quarter inch phone jack, or a 3.5 millimeter
+phone jack.
+If you need to connect a line level device to it, it can be done by reducing the voltage
+using an attenuator or a direct injection box.
+I won't go into all the specifics, since again, your setup may vary, but this is something
+that you can be aware of if you're not getting a signal.
+Check to see if the input setting needs to be changed from line to mic and vice versa.
+Check check check one two.
+I realize that my levels are way too high, so let's make an adjustment to them using
+the audio level dials on the camera.
+Again, this may be a push button or a built-in setting on your camera that requires you to
+go through a menu in order to change it, but on this camera, the channel one and channel
+two levels can be controlled independently with these dials on the side control panel
+near the bottom at the back.
+I find that setting both of them in the 10 o'clock position is usually sufficient for
+human speech at normal speaking volume.
+You can also observe what happens when I turn them down one at a time.
+This is channel two.
+Check check check one two.
+Check check check one two.
+And you can see and hopefully hear that there's a noticeable difference when you're only getting
+audio out of one channel.
+Set them back to the same position and then I'll repeat on channel one, level all the
+way down, and finally I'll set them back both to a comfortable volume and avoid getting
+the clipping or peaking.
+Check check check one two.
+Another common problem that happens often is forgetting to check if your microphones
+that are battery powered always have fresh or recently changed batteries.
+On the wireless receiver, the battery meter is clearly indicated in the display.
+However, it is not as visible on my handheld mic.
+Sometimes you may need to take apart your mic to check the battery life and while you
+have it open, not a bad idea to replace the batteries.
+So again, just make sure that prior to the start of your program or whenever you have
+a break, check and test your microphones and other audio equipment often and thoroughly.
+If you notice that you're getting a buzz or lots of noise in your audio, something similar
+to this sound, try to adjust your output gain and see if that has a dampening effect on
+the audio.
+You can also check your cables and connections, make sure that nothing is hanging out of the
+jack half plugged in or your electronics are properly grounded.
+Sometimes something as simple as uncrossing an audio and power cable that are too close
+in proximity or switching your camera or audio device's power cable to a grounded outlet
+will help you get rid of annoying buzz.
+If you have a ground lift or a preamp or something that you can introduce into the signal chain,
+this may also help to get rid of unwanted audio buzz.
+This is something that you might have to play around with well beforehand and we also recommend
+monitoring your audio by plugging a set of headphones into your camera's headphone or
+AV jack.
+This will help you to hear any low frequency noises easier.
+Camera basics.
+Before we dive into some camera basics, I want to remind everyone that your particular
+camera may be different.
+So again, just keep in mind that while these functions may be present on your camera, they
+might be located in different areas.
+So let's start off with getting our tripod set up and making sure that everything is
+nice and level.
+Again, first thing after getting your tripod legs extended and the camera securely fastened
+to the mounting plate, lock the camera in position because we're going to level out
+this sucker.
+Loosen all your tripod legs, then start moving the legs around until you get the head of
+the tripod in a stable and level position.
+It may take time and practice to get it right.
+Utilize the bubble level that is built into the tripod to assist you.
+Once it looks good, secure the fasteners by tightening them into place.
+Make sure the tilt knob is tightened just enough to prevent your camera from falling
+forward under its own weight, but loose enough so that you can move it fluidly if you need
+to.
+Framing and composition.
+This is pretty fundamental.
+Pay attention to how your subjects are positioned in the frame and don't be afraid to make
+adjustments if needed.
+Obey the rule of thirds, if possible, and position their eye level at about one third
+of the height of the frame from the top.
+If you're far away from the speaker, try to zoom in on your subjects, but not too close,
+but also not too far away that it's difficult to see them.
+If they're going to be stationary and seated the entire time, we recommend getting the
+image framed up and then take care to not accidentally bump the camera or anything like
+that.
+Leave some room above their head and on the sides of their body and try to center them
+as much as possible.
+If the speaker is going to be mobile, I would zoom out slightly and give them a little room
+in the frame to lead them as you track along, panning from side to side with their movements.
+Here's some examples of proper compositions.
+This is good framing.
+This is no good.
+You get the idea.
+Obviously, framing is going to be a whole different consideration.
+If you've got a panel of speakers, I would zoom out, get a nice wide shot of the entire
+panel so you're not constantly panning back and forth and inducing motion sickness in
+your audience.
+A cool feature on a lot of cameras is the focus assist.
+Using the focus assist on your camera allows you to focus in on a specific point without
+jeopardizing your full shot.
+Once you focus in, you can focus in properly, then press the focus assist button and there's
+your shot ready to go.
+It's a quick little tip.
+Next is connecting your camera to your computer.
+RCA slash composite to USB.
+Find the USB on the side of the computer.
+Don't use any on the back to plug in your adapters.
+Make sure that they're firmly tightened and plugged in properly, red, white, and yellow.
+On your camera, input to do the exact same.
+Make sure they're firmly in there.
+Make sure they're not loose, wiggling, or having any connection issues, which could
+cause issues when you're trying to webcast.
+Connecting your camera to a computer using an HDMI adapter.
+We use a Magewell adapter, USB to HDMI.
+We find this to be the most consistent adapter that we've been using.
+Again, make sure it's firmly in there.
+You'll see two lights on the Magewell to confirm that it's connected properly to the computer.
+On the other end, push it into the camera.
+Using an HDMI is definitely a lot easier than using RCAs because you're not going to be
+using as many cables, plus you're also going to get a higher quality video output from
+your camera.
+So when it comes to white balancing, this is typically something you'll want to do
+once prior to the start of your program during your initial setup.
+Manually setting the white balance is not always necessary.
+Some cameras may already be set automatically to adjust to the correct white balance, or
+if you're pressed for time and haven't had a chance to figure this out, no need to panic.
+This is just one of those aesthetic things that will not be a detriment to your recording,
+but will definitely enhance the quality of your image and give your video a much more
+professional look.
+Hopefully the lighting in the room or location you're recording in is not going to be significantly
+changing throughout the day.
+So be mindful of conditions like large uncovered windows, overhead spotlights, or sudden changes
+in the brightness or dimmets of the lights in the room, which may be adjusted from time
+to time.
+If, let's say, there's a projection screen that's getting washed out and it's difficult
+to see by the live audience members, just make sure that the lighting conditions are
+configured prior to white balancing so that you can adjust your setting once and hopefully
+not have to touch it after that.
+So in a nutshell, white balancing is just what it sounds like.
+It's getting the white objects in your camera shot to appear their whitest.
+You can see in this comparison what an improperly white balance image looks like next to the
+same shot after it's been corrected.
+If you've ever wondered why skin tones of certain individuals look off, like they're
+way too orange or too blue, doing these steps will help to make sure that you get the right hues.
+In most situations, you'll hopefully be in a windowless room or one where you have control
+over the amount of natural light and artificial illumination.
+Get it so that you can see the person or persons who will be speaking clearly through your
+camera and so that the projector screen is also well lit and visible.
+We're going to make a few adjustments to our camera concerning the iris and white balance.
+Depending on your camera, you may be limited in your ability to freely and easily change
+these settings, so consult your user manual for these types of camera specifics.
+This particular type of camera, which I mentioned before is a Panasonic AG HM-C150, is a midrange
+consumer level professional digital video camera.
+It has a bunch of dials and switches on the side that look confusing, but really each
+has a simple, basic function.
+You can make an adjustment to the camera's iris by changing the toggle switch to iris
+and then moving the dial up or down to change the f-stop, which will allow you to compensate
+for a brighter image if the lighting is dark or a darker image if the conditions are bright.
+This is also something that can be set to automatic, to do automatically, which I like
+when it comes to white balancing because if there is a slight change in the lighting,
+the camera will automatically adjust the image, which is helpful.
+As long as you're not constantly changing the lighting and it's constantly having to
+compensate, it's not so noticeable as to be distracting.
+So once I got my f-stop set where I want it, which is a little bit of glow coming off of
+the brightest spot in my image, I will now change the white balance to get the color
+tones looking like they should.
+There's a few different settings on this camera.
+Yours may look similar.
+If it's different, don't worry about it.
+Just do the best you can.
+I'll do a quick rundown of what they mean and then tell you what I think is a good default.
+I don't want to dwell on this too much since each room will be set up differently and the
+lighting may be inconsistent, so results may vary.
+The first setting on the switch is AETW, which stands for Auto Tracing White Balance.
+This is generally a fully automatic mode, which tries to guess the correct white balance.
+It works by assuming the brightest parts of your image are white objects and will try
+to correct the image so that the objects appear true white.
+This is what I will typically use in most scenarios.
+The end goal here is to get the image you see in your viewfinder to look as close to
+what you see with the naked eye.
+I set the switch to AETW, then press the white balance button on the front of the camera
+and wait for the message in the display to indicate that the white balance is OK.
+AWB is Auto White Balance and like Auto Tracing White Balance, it's your camera's best guess
+as to what the proper color balance in your image should be depending on the light temperatures.
+I'll give an example.
+In most indoor settings, you're going to be adjusting for tungsten or fluorescent bulbs
+somewhere in the 2,000 to 7,500 Kelvin range.
+The fluorescent bulbs in the room I'm recording this image in are probably around 3,200 Kelvin.
+I have a preset on this camera for a lighting temperature of 5,600 Kelvin, which is more
+in the range of direct natural sunlight and is going to look too dim and too orange for
+indoor light.
+When I switch it to the 32 Kelvin preset, you can see that it's much closer to the Auto
+Tracing White Balance.
+They make special white balancing cards that you can purchase from a photography equipment
+retailer.
+You can also use a blank piece of white paper to assist you.
+That works just as well.
+Zoom in so that the sheet of paper fills the entire frame.
+Switch the setting to AETW or whatever preset you may have on your camera that gives you
+a true white image.
+If skin tones in the LCD don't seem to match what you see with your eyeball, then make
+adjustments accordingly.
+You just want to try to get it as close as possible to what you perceive visually and
+not have a harsh yellowish tint to your image.
+Shutter, Iris, and Gain.
+If you're using a camera that has a button or setting to change the shutter speed, I
+would turn it off.
+As we covered briefly, the Iris controls the size and amount of light coming through the
+aperture of your camera.
+On this camera, there's a switch that allows you to manually adjust the f-stops and open
+or close the aperture using the dial or ring.
+You can also turn on the Auto Iris button and it will adjust your f-stop whenever a
+change occurs in the image that necessitates more or less light to be exposed to the sensor.
+This might be a little distracting, however, so I recommend getting your lighting figured
+out and manually setting your exposure to a fixed amount.
+If you're working under low lighting conditions and you have your aperture all the way open,
+but you're not satisfied with how dark the image might be, you might have an option to
+boost or lower the image gain, which increases and decreases the magnitude of amplification
+and light sensitivity.
+Your camera will probably have automatic or manual functions, or both, for controlling
+the gain, and on this camera, there's factory settings which can be changed by positioning
+a switch to low, middle, or high gain, which is measured in units of dB or decibels.
+Low is equal to 0 dB or no gain.
+Middle gain is typically equal to 6 or 9 decibels, which has the effect on your image of adding
+the amount of light, and finally, high gain, which adds anywhere between 12 to 18 decibels
+or up to 3 times the amount of light to your image.
+Now this carries a caveat.
+The higher the gain, the more this is going to degrade your image quality by adding noise
+and grain to the frame, so keep in mind that this is sort of a last resort if you want
+to keep things looking pretty but visible.
+Very quick, we'll cover a couple of common camera cautionaries and what to do to fix
+an issue.
+Camera troubleshooting.
+Let's launch into some common problems you might encounter and how best to resolve them.
+Number one, let me get this out of the way right off the bat.
+The best thing to do is familiarize yourself with the equipment you're using.
+Do some research, test out some different setups if something isn't working right,
+and make plenty of time for yourself before the start of your program to fix any potential
+issues.
+We recommend at least one and a half to two hours if possible.
+As we covered, make sure to always be recording.
+Hopefully your camera is equipped with a memory card slot.
+We use 32 or 64 gigabyte SD cards to record all of our programs while simultaneously streaming
+audio and video.
+This serves as a backup in case the unthinkable happens and your capture device freezes or
+your internet goes down or lightning strikes or something disrupts your ability to broadcast
+to our media server, you'll always have some sort of a backup recording to use for archiving
+purposes.
+I feel like it goes without saying, but in our highly developed technological society,
+please never forget that technology is our friend, but we are also at its mercy.
+Don't compete with technology, try to complete it.
+So you'll want to format your SD card, we covered this a little bit ago.
+Make sure to start recording and start streaming as soon as possible.
+Don't forget to press the record or broadcast buttons.
+Try not to run the camera off battery power, instead plug the power cable or adapter into
+a surge protected power strip, preferably one that has grounded outlets.
+If you do lose power, again, don't panic, capture devices, battery power will allow
+you to save your progress and pause until power can be restored.
+Obviously you've been recording and broadcasting in Wirecast and you can stop the recording
+that is being written to your hard drive and resume once you get power back to your camera.
+In case the files being written to your SD card were corrupted, you'll have the hard
+drive archive copy as backup.
+Make sure to turn off your camera and unplug it from the outlet before removing the SD
+card.
+Set it aside and replace it with a backup card.
+You should always have at least one to two pre-formatted blank cards set aside, ready
+to use in the event of an emergency.
+SD cards are relatively inexpensive and a decent investment since you can use them.
+Copy the contents to a separate storage device like an external hard drive or upload them
+to a cloud storage site.
+Then you can reformat the cards and reuse them over and over.
+For the SD card that you removed, we'll check it out later to see if the files can be repaired
+but depending on how often your files automatically increment, some content on the card may have
+been lost.
+This is why it's crucial to have a few redundancies in place so that the content is not completely
+lost.
+Most of the time everything will run fine and you won't ever need to resort to using
+your backup recordings but in the circumstance that you do, you'll be glad that you put these
+preventative measures in place.
+From here we'll proceed now to the next chapter which is how to work with Wirecast.
+So with Wirecast you have a couple of ways of getting the application up and running.
+I'm going to show you the way you're probably used to doing and then show another way to
+get your webcast going without always having to launch the application from the event manager.
+So as Sam just demonstrated, you can log into the event manager and then search for your
+upcoming webcast if it's not showing up on the dashboard.
+Once you find it, click on the title and this will bring you to the encoding tab of the
+selected program.
+If all the viewer URLs are empty, simply click on the encoder selection drop down button
+and select Wirecast Typical and those URLs will populate.
+Verify that the file name is correct and then click the save button.
+Then change the encoder selection back to Wirecast High Quality and click save.
+Then launch Wirecast.
+This will allow you to save and open a Wirecast profile that is pre-configured with the correct
+file name and output settings.
+You may still need to add your camera shot, configure the audio source and then add any
+break or pre-roll, post-roll elements into the profile, but once everything has been
+thoroughly tested and your video and audio is being picked up through the USB dongle
+and inputting into Wirecast, go ahead and begin recording and broadcasting and then
+open the viewer to make sure that you see the stream coming through for you.
+Another way if you happen to experience some weird issues where you're not able to open
+a profile on your latest version of Wirecast, locate the application on your capture appliance
+by doing a search or adding a shortcut to your desktop.
+Open the application and once you have a blank profile open, click on the output settings
+button in the menu toolbar.
+I'm working on Wirecast 7, so if your version is older, this will be called broadcast and
+it looks like this.
+You will then be prompted to add a blah blah blah blah blah.
+You know what, if you have some detailed questions about the specifics of Wirecast, email Sam
+or myself.
+We'll set up a call with you to discuss what you can do to change your stream quality,
+make sure that your camera shots are properly composed and that you're getting the most
+out of your broadcast.
+Key things to pay attention to are, number one, set your destination RTMP output to our
+media server.
+For most of you, it's going to appear as it does on the screen right now.
+Number two, the stream name, make sure that the stream name as it appears in this field
+matches whatever it is in the video URLs for your program and the event manager and that
+there are no capitalized letters.
+Number three, encoder selection.
+Choose a default H264 preset, one that you're able to stream on your connection.
+We'll cover this a little bit more in chapter five.
+And number four, make sure that all of your camera shots have been added.
+The correct audio source has been assigned to your camera shot.
+The aspect ratio has been adjusted accordingly so that it appears the way it should.
+It's not stretched out or anything like that in your preview monitor in Wirecast.
+You're seeing audio levels in the main audio meter.
+All your break and pre-roll videos have been added and that you're not plugging and unplugging
+your video adapter into different USB ports without also editing or re-adding your camera
+shot in Wirecast.
+This could be extremely problematic in Wirecast, especially older versions that may not recognize
+your particular adapter despite using different USB ports.
+Speaking of older versions of Wirecast, suffice it to say, if you're still on Wirecast 4,
+we need to talk.
+It's outdated, it's buggy, and it's not going to get any better.
+If you've been using it for a while, it's very likely that you've experienced some of
+these issues from time to time, typically.
+This includes things like video freeze frames, audio and video sources not being recognized
+despite installing driver updates, the semi-frequent crashes, and nonspecific errors.
+This is because Telestream no longer offers updates or support for older versions of Wirecast,
+so it's becoming quickly obsolete.
+If you'd like to discuss upgrading to the latest version of Wirecast, or if you have
+another method or equipment available to you that you'd like to try out, TriCaster for
+example, reach out to Sam or myself and we'd love to explore this further with you and
+make sure that you have a device that meets the system requirements and has the appropriate
+media inputs and interface to run things without issue.
+Real quick before we move on, I just want to showcase a cool feature available in certain
+versions of Wirecast that some folks are already well aware of and are utilizing to
+great effect.
+Here's a look at not the latest version of Wirecast, this is Wirecast 8.
+The interface and features are very similar.
+If you haven't played around with some of the cool newer features, we encourage you
+to do so, otherwise this might be a whole topic unto itself for a future webinar.
+We'll just look briefly at the desktop presenter app.
+Now you can use it to integrate a live feed of presentation slides and layer it alongside
+or inside that of your camera shot, not have to deal with uploading slides to the event
+manager or anything like that.
+This takes a little preparation, but it involves installing a desktop presenter application
+on the computer that is being used to run the presentation materials, as long as the
+presentation computer and the computer running Wirecast are connected to the same network,
+you can add the desktop of the presentation computer as a shot in Wirecast.
+This will allow you to combine your camera shot and the slides being presented into a
+single stream without the need for a video switcher or multiple video inputs going into
+your broadcast device.
+Just something to keep in mind if you want to make your job a little easier, it's pretty
+cool.
+You can also take mp4 files and drop them into Wirecast if you want video clips with
+smoothness and clarity.
+You can also assign multiple audio sources to a single shot, I could go on and on for
+days about how amazing Wirecast is, but instead we'll just move on.
+This chapter of the program is basically just a quick reminder that it never hurts to be
+mindful of what you're doing or not doing during a live event.
+The hope is that once you get things rolling, you can sit back and relax and let the technology
+do what folks way smarter than me have spent millions of dollars designing it to do.
+With that in mind, working in a realm where we rely so much on technology to work, we
+are always at the mercy of technology.
+It's good to have backups and redundancies in place so that if the unpredictable occurs,
+lightning strikes, there's a power failure, or you wind up in the upside down like Will
+Byers, your recording can be salvaged even if your live event can't.
+Shit happens and someone has to deal with it, and that someone is going to be you.
+Whether you want it to be or not, you're ultimately the person everyone looks to for answers if
+some piece of technology is not functioning properly.
+Hopefully you are savvy enough to anticipate any curveballs that might get thrown your
+way, but most of this goes without saying, sometimes weird shit happens like all the
+time.
+Here's a list of things I recommend you keep in mind while webcasting based on situations
+I've found myself in over the years.
+Number one, always monitor your audio.
+Have some headphones on, connect it to your camera or laptop, listen to make sure you're
+hearing clear audio whenever someone is talking, check the audio meters on your camera's LCD
+screen, or the master audio meter in Wirecast.
+You want to be the first person to know if you're having audio issues so that you can
+act and correct them immediately.
+Number two, always monitor your video.
+Like with audio, actively monitor your video while the webcast is happening.
+Make sure that the recording is going, that the image is in focus, the lighting is not
+blown out or too bright, and that your subject is appearing within the frame.
+It happens from time to time.
+If you have a mobile presenter who paces around the front of the room and you're not tracking
+with them, the camera is locked in a static position, we can still hear the disembodied
+voice but the presenter has walked off the screen, and if you're not paying attention
+you're just going to be left with a shot of an empty chair or podium.
+Number three, always have a USB flash drive handy.
+This is great for getting revised or updated presentation materials from the speakers
+in case they don't have their own.
+Number four, always have a backup SD card.
+I recommend recording to SD cards if you have the capability to do so, and it is always
+a good idea to have a 32 or 64 gigabyte card that has already been formatted for your camera
+ready to go in case you need to utilize it.
+Like I said, these are cheap, pick up a few, they're like 10 to 25 bucks, and they will
+save your life.
+Number five, test your equipment beforehand.
+Test the camera, mics, internet speed, your broadcast, slides, your internet speed, video
+clips, and oh yeah, your internet speed.
+Do a full setup at the location you will be broadcasting from, at least a day before your
+scheduled event if possible.
+Make sure everything is good to go and that you're not going to walk in the morning of
+your webcast and find that your video adapter is not working all of a sudden, oh yeah, and
+have a backup video and audio adapter while you're at it.
+Number six, expect the unexpected.
+Sounds cliche, and it is, for a damn good reason.
+I'm sure most of you are familiar with the concept of force majeure, or perhaps even
+Murphy's law.
+So you know that strange things happen.
+You lock down your camera, but mysteriously, it moved.
+You lost your video and audio feed and wire cast, and you swear you didn't bump the cable,
+it moved on its own.
+You thought you put down your coffee cup right here, and now it's over there.
+It moved.
+Point is, this could be a lot to keep track of, so develop a consistent system and you'll
+be fine.
+This chapter is a bit of an overview.
+Again, thank you all for sticking with us so far.
+We hope this has been informative and worthwhile.
+We're nerds, so we thank you for humoring us and allowing us to indulge in our nerd
+interests.
+I touched on this very briefly, but here again are the minimum and recommended system requirements
+for running Wirecast on both Macs and PCs, and here's a full list of equipment we use
+for webcasting.
+As for internet requirements, you'll want to preferably be on a wired connection with
+static IP as opposed to a dynamic IP, if possible, and have a dedicated amount of
+bandwidth that you're not having to share with everyone else at your conference or office.
+On a dedicated line, if you have 10 megabits per second, you'll always have at least that,
+whereas on a shared connection, that 10 megabits per second gets split up among all users and
+devices.
+If you're unsure about what you have, you can contact your IT manager or internet service
+provider and have them help you if you're running into issues of not having a consistent
+upload speed, or you can contact us and we can help you to troubleshoot.
+You'll also want to make sure that ports 1935 and 80 are unblocked on your firewall, as
+those allow RTMP protocols to send and receive data from your broadcasting laptop to our
+media server.
+If you ever get an error while broadcasting that says something to the effect of RTMP
+destination cannot be found, it's very likely that a port has been blocked, or the wrong
+address has been entered in your output destination, or there's a dip in your connectivity and
+the link to our server needs to be reestablished.
+With that, we'd also like to explain a rule of thumb when it comes to upload speed and
+broadcast settings.
+So here it is.
+I'll try to put this in the simplest, most basic terms that I can.
+Your upload speed is going to directly affect the quality of the broadcast you're able to
+stream out.
+If you go into the output settings in Wirecast and you set the encoding quality to 720p with
+a video bitrate of 2 megabits per second, you are streaming out at 2 megabits per second,
+and you would better have at least 2 megabits per second as your upload speed.
+We suggest raising that threshold and giving yourself a higher ceiling, though, when it
+comes to your upload speed and your output quality, since they are directly proportional.
+If you're streaming out at 2 megabits per second, it's best to be on a connection with
+5 to 10 times that amount of upload speed, so about 10 to 20 megabits per second.
+If you only have a dedicated amount of 5 megabits per second upload speed, maybe drop your encoding
+quality to 1 megabit per second.
+Finding a happy medium is key, where you can stream a quality broadcast without having
+to run into issues of latency, lag, and lost connections.
+Don't be confused with missed connections, something different entirely.
+Keep in mind that what you're pushing out is also affecting what your audience is pulling
+down.
+If they're on a connection that gives them at least 2 megabits per second down, they
+should be fine.
+Here are some other suggestions made by popular media streaming providers.
+They recommend about an average of 4 megabits per second down for standard definition videos
+at 720p.
+For higher definition, that number goes up.
+Most of these providers also use performance-enhancing techniques when slower speeds are encountered.
+Some have added local caching of videos around the US in order to compensate for this issue.
+Adaptive bitrate streaming is another feature that tempers the quality of the stream being
+delivered to your device based on your download speed.
+So if you're trying to stream a video in high definition, you're connected to public Wi-Fi
+or using your wireless provider's 3G bandwidth for data, and it's just not happening, adaptive
+bitrate will drop you down to a standard or a lower quality stream to reduce the amount
+of buffering.
+InReach is in the process of migrating our Learning Center viewer to a platform that
+offers this as a standard feature, so be aware that this will be an improvement for you and
+your learners in 2019.
+Hopefully by now, you're coming away from this webinar not feeling too overwhelmed,
+but perhaps a little bit wiser when it comes to running your webcast without issue.
+Your worries have no doubt vanished, and as we hoped to set out to do, you know what to
+do if shit hits the fan.
+We ran down the requiem of requirements and filled you in on what's up with the upload
+and download of internet connection speeds, but no matter how many webcasts you run and
+no matter how often you run them, it's always best to be prepared no matter what circumstances
+you may find yourself in, whether it's your office, some hotel, or who knows, the upside
+down where shit gets real weird and nothing is normal.
+You can rest assured that InReach has your back, and if you ever run into a problem that
+you cannot solve on your own, do some research or please contact us and we'll do everything
+we can to slay the beasts and monsters and shit.
+Until next time, this is Kevin and Sam signing off.
+Peace.
+Oh, and if you have any questions, please feel free to direct them towards my co-presenter
+Sam.
+Now.
+Thank you.

@@ -11,7 +11,7 @@
       </div>
 
       <button
-        v-if="!loading"
+        v-if="!loading && transcriptData"
         class="text-sm text-gray-500 hover:text-gray-700 font-medium transition-colors"
         @click="showFullTranscript = !showFullTranscript"
       >
@@ -21,27 +21,36 @@
 
     <div v-if="loading" class="space-y-4">
       <div v-for="i in 4" :key="i" class="space-y-2">
-        <div class="w-16 h-3 bg-gray-100 rounded animate-pulse"></div>
-        <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
-        <div class="h-4 bg-gray-100 rounded animate-pulse w-4/5"></div>
+        <div class="w-16 h-3 bg-gray-100 rounded animate-pulse"/>
+        <div class="h-4 bg-gray-100 rounded animate-pulse"/>
+        <div class="h-4 bg-gray-100 rounded animate-pulse w-4/5"/>
       </div>
     </div>
 
-    <div v-else class="space-y-6">
-      <div 
+    <div v-else-if="error" class="text-center py-8">
+      <p class="text-red-600 mb-2">Failed to load transcript</p>
+      <button
+        class="text-sm text-blue-600 hover:text-blue-700 font-medium"
+        @click="fetchTranscript"
+      >
+        Try Again
+      </button>
+    </div>
+
+    <div v-else-if="transcriptData" class="space-y-6">
+      <div
         class="space-y-6 overflow-hidden transition-all duration-300"
         :class="showFullTranscript ? 'max-h-none' : 'max-h-80'"
       >
         <div
-          v-for="segment in transcript.segments"
-          :key="segment.timestamp"
+          v-for="(segment, index) in transcriptData.transcript"
+          :key="index"
           class="group"
         >
           <div class="flex items-center gap-2 mb-2">
             <span class="text-xs font-mono text-blue-600 bg-blue-50 px-2 py-1 rounded">
-              {{ segment.timestamp }}
+              {{ segment.startTime }}
             </span>
-            <span class="text-xs text-gray-500">{{ segment.speaker }}</span>
           </div>
           <p class="text-gray-700 leading-relaxed text-sm pl-4 border-l-2 border-gray-100 group-hover:border-gray-200 transition-colors">
             {{ segment.text }}
@@ -50,52 +59,62 @@
       </div>
 
       <div class="flex items-center justify-between pt-4 border-t border-gray-100 text-xs text-gray-500">
-        <span>{{ transcript.totalDuration }} duration</span>
-        <span>{{ transcript.wordCount }} words</span>
+        <span>{{ formatDuration(totalDuration) }} duration</span>
+        <span>{{ wordCount }} words</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
-  loading: {
-    type: Boolean,
-    default: false
-  }
-})
+import { ref, computed, onMounted } from 'vue'
 
 const showFullTranscript = ref(false)
+const loading = ref(true)
+const error = ref(false)
+const transcriptData = ref(null)
 
-const transcript = ref({
-  totalDuration: "25:30",
-  wordCount: "3,247",
-  segments: [
-    {
-      timestamp: "00:00",
-      speaker: "Presenter",
-      text: "Welcome to this comprehensive guide on modern web development practices. Today we'll be exploring the latest trends and techniques that are shaping the industry."
-    },
-    {
-      timestamp: "00:45",
-      speaker: "Presenter",
-      text: "Let's start by understanding the fundamental principles of component-based architecture and how it revolutionizes the way we build user interfaces."
-    },
-    {
-      timestamp: "02:30",
-      speaker: "Presenter",
-      text: "Component reusability is one of the key benefits we get from modern frameworks like Vue, React, and Angular. By breaking down our UI into smaller, manageable pieces, we can..."
-    },
-    {
-      timestamp: "05:15",
-      speaker: "Presenter",
-      text: "Now let's dive into state management. Proper state management is crucial for building scalable applications that can handle complex data flows and user interactions."
-    },
-    {
-      timestamp: "08:20",
-      speaker: "Presenter",
-      text: "Performance optimization should be a priority from day one. We'll look at techniques like code splitting, lazy loading, and how to measure and improve your application's performance."
+const totalDuration = computed(() => {
+  if (!transcriptData.value?.transcript?.length) return 0
+  const lastSegment = transcriptData.value.transcript[transcriptData.value.transcript.length - 1]
+  return lastSegment.endSeconds
+})
+
+const wordCount = computed(() => {
+  if (!transcriptData.value?.transcript) return 0
+  return transcriptData.value.transcript
+    .reduce((count, segment) => count + segment.text.split(' ').length, 0)
+    .toLocaleString()
+})
+
+const formatDuration = (seconds) => {
+  const minutes = Math.floor(seconds / 60)
+  const remainingSeconds = seconds % 60
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
+}
+
+const fetchTranscript = async () => {
+  loading.value = true
+  error.value = false
+
+  try {
+    const response = await fetch('/api/transcript/id-demo-result')
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`)
     }
-  ]
+
+    const data = await response.json()
+    transcriptData.value = data
+  } catch (err) {
+    console.error('Failed to fetch transcript:', err)
+    error.value = true
+  } finally {
+    loading.value = false
+  }
+}
+
+onMounted(() => {
+  fetchTranscript()
 })
 </script>

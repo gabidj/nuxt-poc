@@ -1,0 +1,30 @@
+{
+  "items": [
+    { "title": "Welcome and Webinar Overview", "startSecond": 0, "duration": 63 },
+    { "title": "Scope and Goals of the Training", "startSecond": 63, "duration": 74 },
+    { "title": "Agenda Preview and Key Topics", "startSecond": 137, "duration": 81 },
+    { "title": "Preparation Philosophy and Contact Info", "startSecond": 218, "duration": 168 },
+    { "title": "Equipment Checklist for Webcasting", "startSecond": 386, "duration": 304 },
+    { "title": "Tripod Setup and Leveling", "startSecond": 690, "duration": 290 },
+    { "title": "Connect Camera to Capture Device (HDMI/Composite)", "startSecond": 980, "duration": 98 },
+    { "title": "Hand-off to Sam: Audio and Camera Basics", "startSecond": 1078, "duration": 3 },
+    { "title": "Mixer Walkthrough and Baseline Settings", "startSecond": 1081, "duration": 116 },
+    { "title": "Wireless Mic to Camera: Inputs and Levels", "startSecond": 1197, "duration": 121 },
+    { "title": "Audio Troubleshooting: Inputs, Mic vs Line, Levels", "startSecond": 1318, "duration": 239 },
+    { "title": "Buzz/Hiss Mitigation and Monitoring", "startSecond": 1557, "duration": 100 },
+    { "title": "Camera Basics: Tripod, Framing, Composition", "startSecond": 1657, "duration": 294 },
+    { "title": "Focus Assist Usage", "startSecond": 1951, "duration": 32 },
+    { "title": "Connecting Camera to Computer: Composite and HDMI", "startSecond": 1983, "duration": 116 },
+    { "title": "White Balancing Concepts and Workflow", "startSecond": 2099, "duration": 358 },
+    { "title": "Shutter, Iris, Gain: Exposure Control", "startSecond": 2457, "duration": 207 },
+    { "title": "Camera Troubleshooting and Redundancy Tips", "startSecond": 2664, "duration": 288 },
+    { "title": "Wirecast: Launching and Profile Setup (Method 1)", "startSecond": 2952, "duration": 264 },
+    { "title": "Wirecast: Manual Output Setup (Method 2) and Key Settings", "startSecond": 3216, "duration": 318 },
+    { "title": "Wirecast Features: Desktop Presenter and Advanced Tips", "startSecond": 3534, "duration": 224 },
+    { "title": "Live Event Mindset: Monitoring and Redundancies", "startSecond": 3758, "duration": 194 },
+    { "title": "Operational Best Practices During Webcasts", "startSecond": 3952, "duration": 485 },
+    { "title": "Systems Requirements, Network, and Firewall Ports", "startSecond": 4437, "duration": 272 },
+    { "title": "Upload Speed vs Bitrate and Viewer Experience", "startSecond": 4709, "duration": 314 },
+    { "title": "Closing Remarks and Support Offer", "startSecond": 5023, "duration": 76 }
+  ]
+}

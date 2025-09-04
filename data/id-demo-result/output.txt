@@ -1,0 +1,671 @@
+Detecting language using up to the first 30 seconds. Use `--language` to specify the language
+Detected language: English
+[00:00.000 --> 00:28.560]  Greetings and salutations.
+[00:28.560 --> 00:34.120]  Welcome to this training webinar on best practices in webcasting and videography,
+[00:34.120 --> 00:40.620]  which we've titled Stranger Audio Visual, a Guide for Navigating the Upside-Down of Webcasting.
+[00:40.620 --> 00:45.680]  This is a program with a Stranger Things theme that we will almost certainly be dropping
+[00:45.680 --> 00:48.960]  immediately, so don't get too attached.
+[00:48.960 --> 00:53.160]  My name is Kevin Berg, I'm the production and live events manager at InReach, and today
+[00:53.160 --> 00:58.340]  my colleague and co-presenter Sam Dickinson and I will take you through the fast-paced
+[00:58.340 --> 01:03.380]  fun-filled frenzy that is the wide world of webcasting.
+[01:03.380 --> 01:07.520]  In this, the first of six chapters, we're going to preface this presentation with the
+[01:07.520 --> 01:12.820]  promise that once this webinar ends, any worries or apprehensions you may have had regarding
+[01:12.820 --> 01:17.020]  live streaming will mysteriously and magically vanish.
+[01:17.020 --> 01:21.500]  What we'll cover today is not necessarily a novice approach, but more of a beginner level
+[01:21.500 --> 01:26.620]  to somewhat advanced audio and camera basics in terms of preparation, troubleshooting,
+[01:26.620 --> 01:28.820]  and best practices.
+[01:28.820 --> 01:34.000]  Now I know many of you are no stranger, pun intended, to webcasting live events and have
+[01:34.000 --> 01:38.260]  been doing it in some fashion for years and years and years, but we're here to tell you
+[01:38.260 --> 01:43.460]  that, surprise, you've been doing it wrong, all wrong.
+[01:43.460 --> 01:48.280]  Just kidding, you're doing a fantastic job, but as technology advances, so too can improvements
+[01:48.280 --> 01:50.640]  be made in our methods.
+[01:50.640 --> 01:54.900]  We'll go over some simple program launches using Wirecast, what to tell presenters and
+[01:54.900 --> 02:00.220]  speakers to help the broadcast run smoothly, technical requirements that we recommend including
+[02:00.220 --> 02:04.780]  internet and network connection speeds as it relates to your broadcasting needs, and
+[02:04.780 --> 02:09.820]  lastly, a quick overview of what was addressed so that you can hopefully fare better than
+[02:09.820 --> 02:15.740]  Barbara Holland did as you journey through the upside down of webcasting.
+[02:15.740 --> 02:19.760]  This is our chance to impart some of the tried and true methods and approaches to running
+[02:19.760 --> 02:23.280]  a successful webcast or videography event.
+[02:23.280 --> 02:27.520]  Preparation is key, and you're going to hear me say this a lot, but I cannot stress enough
+[02:27.520 --> 02:32.400]  that if you give yourself plenty of time to set up and test your equipment the day before,
+[02:32.400 --> 02:36.360]  or at least a couple hours before the start of your event, you'll eliminate a lot of the
+[02:36.360 --> 02:40.580]  needless worry that comes from last minute issues.
+[02:40.580 --> 02:45.440]  This is how we like to operate all of our webcasts that we tech, so do your future self
+[02:45.440 --> 02:49.520]  a favor and give yourself plenty of time.
+[02:49.520 --> 02:54.140]  Just as a reminder, if you ever have any issues, feel free to reach out to either of us through
+[02:54.140 --> 02:58.740]  our personal contact information, which you can see on the screen right now if it's an
+[02:58.740 --> 03:06.500]  urgent matter, or you can email live at inreachce.com for other matters relating to live events.
+[03:06.500 --> 03:10.660]  I usually try to be very thorough in these technical demonstrations, but for the sake
+[03:10.660 --> 03:14.620]  of brevity and time considerations today, we will do our best to keep things nice and
+[03:14.620 --> 03:16.220]  concise.
+[03:16.220 --> 03:20.320]  So now, before I turn things over to Sam to walk us through a few basics of camera and
+[03:20.320 --> 03:25.920]  audio setups, let's do a quick rundown of the equipment you'll need to run a webcast.
+[03:25.920 --> 03:28.920]  Keep in mind, this is a fairly comprehensive list.
+[03:28.920 --> 03:32.920]  Technology is so far advanced to the point where there are several smartphone applications
+[03:32.920 --> 03:37.440]  available that allow you to run a webcast entirely from your mobile device.
+[03:37.440 --> 03:41.840]  That being said, while all of these items are not absolutely necessary, we strongly
+[03:41.840 --> 03:46.300]  recommend them because just because you can use a smartphone to run a webcast doesn't
+[03:46.300 --> 03:49.640]  mean that you should use a smartphone to run a webcast.
+[03:49.640 --> 03:51.300]  Let's begin, shall we?
+[03:51.300 --> 03:56.220]  So first off, we're going to need a camera, preferably one with an HDMI port, or at the
+[03:56.220 --> 04:02.060]  very least, composite video and RCA audio, also known as yellow, red, and white, and
+[04:02.060 --> 04:08.060]  XLR audio inputs, and lastly, at least one memory card slot that allows you to record
+[04:08.060 --> 04:10.420]  video to an SD card.
+[04:10.420 --> 04:15.420]  This particular camera is a Panasonic AG-HMC150.
+[04:15.420 --> 04:21.360]  You'll also need a good pair of headphones, a wired or wireless mic system, an HDMI cable,
+[04:21.360 --> 04:27.560]  an HDMI to USB adapter, a soundboard or mixer, audio cables with male XLR to quarter inch
+[04:27.560 --> 04:34.920]  connections, pre-formatted SD cards, backup batteries, a digital audio recorder, a tripod,
+[04:34.920 --> 04:41.640]  an ethernet line, and optional composite video and RCA audio cables, along with a video
+[04:41.640 --> 04:49.000]  audio to USB adapter if you're not using HDMI, and last but not least, a computer with broadcasting
+[04:49.000 --> 04:50.560]  software installed.
+[04:50.560 --> 04:52.240]  We recommend using Wirecast.
+[04:52.240 --> 04:56.240]  It's been our application of choice for more than six years, but you may have something
+[04:56.240 --> 04:58.720]  else that you'd like to try, and that's fine.
+[04:58.720 --> 05:02.360]  So here's the minimum and recommended system requirements for running the latest version
+[05:02.360 --> 05:07.160]  of Wirecast on both Mac and PC.
+[05:07.160 --> 05:11.600]  And in case you missed it, we included a helpful PDF and links in the Materials tab that include
+[05:11.600 --> 05:13.360]  all this information.
+[05:13.360 --> 05:17.600]  You can go check it out at your leisure, so it's there for your reference.
+[05:17.600 --> 05:22.020]  So real quick, I'm going to set up my tripod, loosening the tension screws and extending
+[05:22.020 --> 05:24.480]  the legs to the appropriate height.
+[05:24.480 --> 05:28.980]  You want to be able to have a stable base, but also have your camera position high enough
+[05:28.980 --> 05:32.740]  to shoot above the heads of the audience sitting between you and your subject.
+[05:32.740 --> 05:37.780]  Make sure that if the feet of your tripod have adjustable knobs at the bottom, you position
+[05:37.780 --> 05:41.020]  those to the same height as well.
+[05:41.020 --> 05:45.860]  Once I'm at the height I want, keep the leg locks unlocked, and then I'll use the bubble
+[05:45.860 --> 05:50.500]  level on the head of the tripod to get a nice level shot.
+[05:50.500 --> 05:55.820]  If your tripod does not have a bubble level, you can also use the vertical guides or just
+[05:55.820 --> 06:02.300]  the edge of your frame as it appears in the LCD to line up the vertical line with some
+[06:02.300 --> 06:09.140]  other truly vertical line in your environment, such as like a corner or the edge of a podium,
+[06:09.140 --> 06:10.340]  something like that.
+[06:10.340 --> 06:14.140]  Next, if you haven't already, plug in and power on your camera.
+[06:14.140 --> 06:20.500]  Some of you utilize pan-tilt zoom or PTZ cameras that don't necessarily have this level of
+[06:20.500 --> 06:25.460]  hands-on interaction, but if you're using equipment similar to this, it should be somewhat
+[06:25.460 --> 06:26.460]  familiar.
+[06:26.460 --> 06:28.540]  You want your camera in camera mode.
+[06:28.540 --> 06:33.060]  You want to make sure that your audio inputs are configured correctly, we'll cover this
+[06:33.060 --> 06:38.380]  more in a bit, and that you have the appropriate recording and AV output settings configured
+[06:38.380 --> 06:39.380]  as well.
+[06:39.380 --> 06:45.780]  We'll also go over focus, swipe balancing, f-stop, and all that here in a bit as well,
+[06:45.780 --> 06:50.620]  but for now we'll just want to have an SD card inserted and formatted.
+[06:50.620 --> 06:54.200]  Make sure that you've backed up any content from the card onto another device or hard
+[06:54.200 --> 06:59.080]  drive before you format it, because it will permanently erase the content, so just be
+[06:59.080 --> 07:00.640]  aware of that.
+[07:00.640 --> 07:04.680]  This camera is ready to go, so now we'll connect the video and audio signals to our webcasting
+[07:04.680 --> 07:11.240]  laptop using an HDMI to USB adapter shown here, but you might also use something like
+[07:11.240 --> 07:18.560]  composite video and RCA audio, which also connects to a USB port via an adapter.
+[07:18.560 --> 07:23.160]  I'm doing a full setup here, which from beginning to end takes about 20 minutes.
+[07:23.160 --> 07:27.620]  If you're webcasting from your own studio or facility and have the setup more or less
+[07:27.620 --> 07:31.600]  locked down and ready to go at all times, even better.
+[07:31.600 --> 07:37.400]  Again, most equipment and setups are going to have slight variances, but concept and
+[07:37.400 --> 07:40.440]  the end result will always be the same.
+[07:40.440 --> 07:47.720]  Now that we have everything all set up and ready to go, before we dive into actually
+[07:48.560 --> 07:54.000]  broadcasting, I'm going to have Sam go over some audio and camera troubleshooting.
+[07:54.000 --> 07:55.560]  Sam, take it away.
+[07:55.560 --> 08:00.840]  Hi, my name is Sam Dickinson, and within Reach, we're going to go over some basics for audio
+[08:00.840 --> 08:02.580]  and camera setup.
+[08:02.580 --> 08:04.040]  This will be your soundboard mixer.
+[08:04.040 --> 08:12.840]  You'll have line one, your gain, your equalizer, high and low, and your volume for line one.
+[08:12.840 --> 08:18.440]  You have your main mixer that controls the volume for the entire board, line two and
+[08:18.440 --> 08:22.600]  three and four volume, and your headphones volume.
+[08:22.600 --> 08:27.640]  For these purposes, we're only going to work with line one, and what you want to do is
+[08:27.640 --> 08:33.080]  make sure that each one of these, your gain, your EQ, and your volume, all set on the U
+[08:33.080 --> 08:34.640]  setting.
+[08:34.640 --> 08:39.720]  This is a baseline setting that allows you to adjust the volume as necessary.
+[08:39.720 --> 08:43.720]  When you're ready to go, plug in your XLR cable into line one, and you're always going
+[08:43.720 --> 08:50.380]  to just set up a quarter inch into the left or right out.
+[08:50.380 --> 08:56.760]  Place your line volume and main mix on U, just to give you a baseline, and from here
+[08:56.760 --> 08:58.120]  you're ready to test your audio.
+[08:58.120 --> 09:00.840]  Now, each person, each setup is going to be a little bit different.
+[09:00.840 --> 09:02.720]  You can have a house audio.
+[09:02.720 --> 09:06.920]  For this test, we're going to be using a wireless handheld mic system, and this will be your
+[09:06.920 --> 09:08.480]  camera.
+[09:08.480 --> 09:14.840]  If your camera has an XLR setting or XLR input, we usually set it to input two, which would
+[09:14.840 --> 09:19.120]  be the bottom of this type of camera.
+[09:19.120 --> 09:21.640]  Plug in your XLR cable and make sure that's firmly tightened.
+[09:21.640 --> 09:25.480]  Now, you want to switch it over to the correct input.
+[09:25.480 --> 09:29.680]  We have to change the settings to input two, so make sure that the input two is going to
+[09:29.680 --> 09:32.580]  be receiving all the audio instead of input one.
+[09:32.580 --> 09:39.300]  We turn on our wireless handheld mic, and once we do that, we can see levels in the
+[09:39.300 --> 09:42.340]  viewer screen and also on our mixer.
+[09:42.340 --> 09:45.980]  The main mix volume will raise it, and it will give you a higher output volume.
+[09:45.980 --> 09:50.060]  You can change the volume with the main, and as you can see, it bumps up a lot more.
+[09:50.060 --> 09:52.340]  Now, this is way too loud.
+[09:52.340 --> 09:58.380]  A good baseline for this is to watch the lines right underneath the 1-100th symbol.
+[09:58.380 --> 10:09.820]  If you do see a red line pop up, that means you need to definitely turn your volume down.
+[10:09.820 --> 10:13.980]  So we'll quickly go over a couple of things to be mindful of when preparing audio for
+[10:13.980 --> 10:17.460]  a live webcast or videography-only event.
+[10:17.460 --> 10:22.220]  These are some helpful tips if you find yourself in a bind and are not getting good audio levels
+[10:22.220 --> 10:26.820]  or maybe there's some buzz or hiss or that sort of thing coming through that you want
+[10:27.260 --> 10:29.540]  to get rid of so your audio is nice and clean.
+[10:29.540 --> 10:34.140]  Sticking with our previous setup, we've got the receiver from our wireless handheld microphone
+[10:34.140 --> 10:41.020]  plugged into the XLR input number two on our camera, and as you can hear, I'm doing a sound
+[10:41.020 --> 10:46.340]  check, and you can also see that I'm getting levels indicated by the level meter in the
+[10:46.340 --> 10:49.300]  bottom left corner of the display screen.
+[10:49.300 --> 10:52.620]  So let's say you find that you're not getting levels for some reason.
+[10:52.620 --> 10:56.260]  The first thing I check is to make sure that all my connections are inserted all the way
+[10:56.460 --> 10:59.020]  and are snug.
+[10:59.020 --> 11:05.900]  Next we verify that all of our camera's channels and inputs were directed to input two.
+[11:05.900 --> 11:09.700]  If you have channel one and channel two set to the internal mic setting, this will activate
+[11:09.700 --> 11:14.860]  your camera's onboard built-in mic, which I recommend you avoid at all costs since this
+[11:14.860 --> 11:19.860]  just picks up room audio and all that comes with it, background noises, people talking,
+[11:19.860 --> 11:23.700]  clinking glasses, toilets flushing, slamming doors, etc.
+[11:23.780 --> 11:28.320]  Having both channels set to the same input will ensure that you're getting stereo audio
+[11:28.320 --> 11:30.060]  from the same source.
+[11:30.060 --> 11:34.820]  You'll also want to make sure that whichever input is not being used is turned off.
+[11:34.820 --> 11:39.260]  I recommend playing around with these settings whenever you have free time to familiarize
+[11:39.260 --> 11:42.340]  yourself with your camera.
+[11:42.340 --> 11:47.280]  Since I've got a mic level device plugged into the XLR input, I'll make sure that mic
+[11:47.280 --> 11:51.980]  is selected on the input toggle switch on the front of the camera.
+[11:51.980 --> 11:54.300]  Let's see what happens when I change the input.
+[11:59.340 --> 12:04.300]  Switching from mic to line.
+[12:04.300 --> 12:08.460]  As you can hear, the audio signal is still there, but it's incredibly weak.
+[12:08.460 --> 12:12.020]  Let's change it back.
+[12:12.020 --> 12:14.820]  The audio signal is back and we get levels again.
+[12:14.820 --> 12:19.100]  Again, if your camera setup is different, you might need to do some investigating, but
+[12:19.100 --> 12:22.020]  typically XLR inputs are pretty similar.
+[12:22.020 --> 12:25.740]  Mic and line refer to the voltage of an audio signal.
+[12:25.740 --> 12:29.700]  Wired and wireless microphones are typically connected to mic level inputs, while most
+[12:29.700 --> 12:34.380]  audio devices like mixers and outputs of mic preamps use line level.
+[12:34.380 --> 12:39.980]  A mic level input is typically a female XLR connection, like the one on this camera.
+[12:39.980 --> 12:45.900]  A line level input is typically an RCA jack, a quarter inch phone jack, or a 3.5 millimeter
+[12:45.900 --> 12:47.120]  phone jack.
+[12:47.120 --> 12:51.560]  If you need to connect a line level device to it, it can be done by reducing the voltage
+[12:51.560 --> 12:55.120]  using an attenuator or a direct injection box.
+[12:55.120 --> 12:59.220]  I won't go into all the specifics, since again, your setup may vary, but this is something
+[12:59.220 --> 13:03.000]  that you can be aware of if you're not getting a signal.
+[13:03.000 --> 13:08.160]  Check to see if the input setting needs to be changed from line to mic and vice versa.
+[13:08.160 --> 13:09.920]  Check check check one two.
+[13:09.920 --> 13:14.960]  I realize that my levels are way too high, so let's make an adjustment to them using
+[13:14.960 --> 13:17.080]  the audio level dials on the camera.
+[13:17.080 --> 13:21.040]  Again, this may be a push button or a built-in setting on your camera that requires you to
+[13:21.040 --> 13:25.360]  go through a menu in order to change it, but on this camera, the channel one and channel
+[13:25.360 --> 13:30.040]  two levels can be controlled independently with these dials on the side control panel
+[13:30.040 --> 13:32.360]  near the bottom at the back.
+[13:32.360 --> 13:36.580]  I find that setting both of them in the 10 o'clock position is usually sufficient for
+[13:36.580 --> 13:39.660]  human speech at normal speaking volume.
+[13:39.660 --> 13:43.720]  You can also observe what happens when I turn them down one at a time.
+[13:43.720 --> 13:44.720]  This is channel two.
+[13:44.720 --> 13:46.440]  Check check check one two.
+[13:46.440 --> 13:47.440]  Check check check one two.
+[13:47.440 --> 13:52.440]  And you can see and hopefully hear that there's a noticeable difference when you're only getting
+[13:52.440 --> 13:54.200]  audio out of one channel.
+[13:54.200 --> 14:00.880]  Set them back to the same position and then I'll repeat on channel one, level all the
+[14:00.880 --> 14:05.760]  way down, and finally I'll set them back both to a comfortable volume and avoid getting
+[14:05.760 --> 14:07.560]  the clipping or peaking.
+[14:07.560 --> 14:11.440]  Check check check one two.
+[14:11.600 --> 14:17.160]  Another common problem that happens often is forgetting to check if your microphones
+[14:17.160 --> 14:21.800]  that are battery powered always have fresh or recently changed batteries.
+[14:21.800 --> 14:26.280]  On the wireless receiver, the battery meter is clearly indicated in the display.
+[14:26.280 --> 14:30.400]  However, it is not as visible on my handheld mic.
+[14:30.400 --> 14:35.600]  Sometimes you may need to take apart your mic to check the battery life and while you
+[14:35.600 --> 14:39.840]  have it open, not a bad idea to replace the batteries.
+[14:39.840 --> 14:44.040]  So again, just make sure that prior to the start of your program or whenever you have
+[14:44.040 --> 14:50.960]  a break, check and test your microphones and other audio equipment often and thoroughly.
+[14:50.960 --> 14:55.040]  If you notice that you're getting a buzz or lots of noise in your audio, something similar
+[14:55.040 --> 15:01.240]  to this sound, try to adjust your output gain and see if that has a dampening effect on
+[15:01.240 --> 15:02.240]  the audio.
+[15:02.240 --> 15:06.040]  You can also check your cables and connections, make sure that nothing is hanging out of the
+[15:06.040 --> 15:11.040]  jack half plugged in or your electronics are properly grounded.
+[15:11.040 --> 15:15.240]  Sometimes something as simple as uncrossing an audio and power cable that are too close
+[15:15.240 --> 15:20.840]  in proximity or switching your camera or audio device's power cable to a grounded outlet
+[15:20.840 --> 15:24.140]  will help you get rid of annoying buzz.
+[15:24.140 --> 15:29.160]  If you have a ground lift or a preamp or something that you can introduce into the signal chain,
+[15:29.160 --> 15:32.960]  this may also help to get rid of unwanted audio buzz.
+[15:32.960 --> 15:38.100]  This is something that you might have to play around with well beforehand and we also recommend
+[15:38.100 --> 15:42.240]  monitoring your audio by plugging a set of headphones into your camera's headphone or
+[15:42.240 --> 15:43.960]  AV jack.
+[15:43.960 --> 15:49.680]  This will help you to hear any low frequency noises easier.
+[15:49.680 --> 15:50.680]  Camera basics.
+[15:50.680 --> 15:55.200]  Before we dive into some camera basics, I want to remind everyone that your particular
+[15:55.200 --> 15:56.520]  camera may be different.
+[15:56.520 --> 16:01.400]  So again, just keep in mind that while these functions may be present on your camera, they
+[16:01.520 --> 16:04.240]  might be located in different areas.
+[16:04.240 --> 16:07.920]  So let's start off with getting our tripod set up and making sure that everything is
+[16:07.920 --> 16:09.640]  nice and level.
+[16:09.640 --> 16:15.740]  Again, first thing after getting your tripod legs extended and the camera securely fastened
+[16:15.740 --> 16:20.480]  to the mounting plate, lock the camera in position because we're going to level out
+[16:20.480 --> 16:22.040]  this sucker.
+[16:22.040 --> 16:26.920]  Loosen all your tripod legs, then start moving the legs around until you get the head of
+[16:26.920 --> 16:30.280]  the tripod in a stable and level position.
+[16:30.280 --> 16:33.200]  It may take time and practice to get it right.
+[16:33.200 --> 16:36.920]  Utilize the bubble level that is built into the tripod to assist you.
+[16:36.920 --> 16:40.200]  Once it looks good, secure the fasteners by tightening them into place.
+[16:40.200 --> 16:44.600]  Make sure the tilt knob is tightened just enough to prevent your camera from falling
+[16:44.600 --> 16:49.080]  forward under its own weight, but loose enough so that you can move it fluidly if you need
+[16:49.080 --> 16:53.120]  to.
+[16:53.120 --> 16:55.940]  Framing and composition.
+[16:55.940 --> 16:57.000]  This is pretty fundamental.
+[16:57.000 --> 17:00.640]  Pay attention to how your subjects are positioned in the frame and don't be afraid to make
+[17:00.640 --> 17:02.040]  adjustments if needed.
+[17:02.040 --> 17:06.960]  Obey the rule of thirds, if possible, and position their eye level at about one third
+[17:06.960 --> 17:09.080]  of the height of the frame from the top.
+[17:09.080 --> 17:15.120]  If you're far away from the speaker, try to zoom in on your subjects, but not too close,
+[17:15.120 --> 17:17.840]  but also not too far away that it's difficult to see them.
+[17:17.840 --> 17:22.640]  If they're going to be stationary and seated the entire time, we recommend getting the
+[17:22.880 --> 17:28.000]  image framed up and then take care to not accidentally bump the camera or anything like
+[17:28.000 --> 17:29.320]  that.
+[17:29.320 --> 17:33.560]  Leave some room above their head and on the sides of their body and try to center them
+[17:33.560 --> 17:35.560]  as much as possible.
+[17:35.560 --> 17:40.720]  If the speaker is going to be mobile, I would zoom out slightly and give them a little room
+[17:40.720 --> 17:47.520]  in the frame to lead them as you track along, panning from side to side with their movements.
+[17:47.520 --> 17:50.480]  Here's some examples of proper compositions.
+[17:50.480 --> 17:52.140]  This is good framing.
+[17:52.140 --> 17:53.620]  This is no good.
+[17:53.620 --> 17:54.620]  You get the idea.
+[17:54.620 --> 17:58.300]  Obviously, framing is going to be a whole different consideration.
+[17:58.300 --> 18:05.180]  If you've got a panel of speakers, I would zoom out, get a nice wide shot of the entire
+[18:05.180 --> 18:10.460]  panel so you're not constantly panning back and forth and inducing motion sickness in
+[18:10.460 --> 18:12.100]  your audience.
+[18:12.100 --> 18:25.200]  A cool feature on a lot of cameras is the focus assist.
+[18:25.200 --> 18:30.580]  Using the focus assist on your camera allows you to focus in on a specific point without
+[18:30.580 --> 18:32.660]  jeopardizing your full shot.
+[18:32.660 --> 18:38.760]  Once you focus in, you can focus in properly, then press the focus assist button and there's
+[18:38.760 --> 18:40.160]  your shot ready to go.
+[18:40.720 --> 18:42.320]  It's a quick little tip.
+[18:42.320 --> 18:44.320]  Next is connecting your camera to your computer.
+[18:44.320 --> 18:47.480]  RCA slash composite to USB.
+[18:47.480 --> 18:49.360]  Find the USB on the side of the computer.
+[18:49.360 --> 18:52.600]  Don't use any on the back to plug in your adapters.
+[18:52.600 --> 19:00.600]  Make sure that they're firmly tightened and plugged in properly, red, white, and yellow.
+[19:00.600 --> 19:04.480]  On your camera, input to do the exact same.
+[19:04.480 --> 19:06.560]  Make sure they're firmly in there.
+[19:06.560 --> 19:11.120]  Make sure they're not loose, wiggling, or having any connection issues, which could
+[19:11.120 --> 19:15.920]  cause issues when you're trying to webcast.
+[19:15.920 --> 19:19.440]  Connecting your camera to a computer using an HDMI adapter.
+[19:19.440 --> 19:22.800]  We use a Magewell adapter, USB to HDMI.
+[19:22.800 --> 19:27.120]  We find this to be the most consistent adapter that we've been using.
+[19:27.120 --> 19:29.080]  Again, make sure it's firmly in there.
+[19:29.080 --> 19:34.160]  You'll see two lights on the Magewell to confirm that it's connected properly to the computer.
+[19:34.160 --> 19:36.680]  On the other end, push it into the camera.
+[19:36.680 --> 19:40.360]  Using an HDMI is definitely a lot easier than using RCAs because you're not going to be
+[19:40.360 --> 19:45.520]  using as many cables, plus you're also going to get a higher quality video output from
+[19:45.520 --> 19:46.440]  your camera.
+[19:52.440 --> 19:55.200]  So when it comes to white balancing, this is typically something you'll want to do
+[19:55.200 --> 19:59.160]  once prior to the start of your program during your initial setup.
+[19:59.160 --> 20:02.560]  Manually setting the white balance is not always necessary.
+[20:02.960 --> 20:07.840]  Some cameras may already be set automatically to adjust to the correct white balance, or
+[20:07.840 --> 20:12.240]  if you're pressed for time and haven't had a chance to figure this out, no need to panic.
+[20:12.240 --> 20:17.840]  This is just one of those aesthetic things that will not be a detriment to your recording,
+[20:17.840 --> 20:21.880]  but will definitely enhance the quality of your image and give your video a much more
+[20:21.880 --> 20:24.040]  professional look.
+[20:24.040 --> 20:28.600]  Hopefully the lighting in the room or location you're recording in is not going to be significantly
+[20:28.600 --> 20:30.720]  changing throughout the day.
+[20:30.880 --> 20:35.560]  So be mindful of conditions like large uncovered windows, overhead spotlights, or sudden changes
+[20:35.560 --> 20:40.560]  in the brightness or dimmets of the lights in the room, which may be adjusted from time
+[20:40.560 --> 20:41.560]  to time.
+[20:41.560 --> 20:45.840]  If, let's say, there's a projection screen that's getting washed out and it's difficult
+[20:45.840 --> 20:50.160]  to see by the live audience members, just make sure that the lighting conditions are
+[20:50.160 --> 20:54.960]  configured prior to white balancing so that you can adjust your setting once and hopefully
+[20:54.960 --> 20:58.120]  not have to touch it after that.
+[20:58.160 --> 21:01.360]  So in a nutshell, white balancing is just what it sounds like.
+[21:01.360 --> 21:06.360]  It's getting the white objects in your camera shot to appear their whitest.
+[21:06.360 --> 21:11.440]  You can see in this comparison what an improperly white balance image looks like next to the
+[21:11.440 --> 21:14.060]  same shot after it's been corrected.
+[21:14.060 --> 21:18.440]  If you've ever wondered why skin tones of certain individuals look off, like they're
+[21:18.440 --> 21:24.120]  way too orange or too blue, doing these steps will help to make sure that you get the right hues.
+[21:25.120 --> 21:29.800]  In most situations, you'll hopefully be in a windowless room or one where you have control
+[21:29.800 --> 21:34.200]  over the amount of natural light and artificial illumination.
+[21:34.200 --> 21:38.040]  Get it so that you can see the person or persons who will be speaking clearly through your
+[21:38.040 --> 21:43.480]  camera and so that the projector screen is also well lit and visible.
+[21:43.480 --> 21:49.320]  We're going to make a few adjustments to our camera concerning the iris and white balance.
+[21:49.320 --> 21:53.480]  Depending on your camera, you may be limited in your ability to freely and easily change
+[21:53.480 --> 21:58.960]  these settings, so consult your user manual for these types of camera specifics.
+[21:58.960 --> 22:06.240]  This particular type of camera, which I mentioned before is a Panasonic AG HM-C150, is a midrange
+[22:06.240 --> 22:09.280]  consumer level professional digital video camera.
+[22:09.280 --> 22:13.440]  It has a bunch of dials and switches on the side that look confusing, but really each
+[22:13.440 --> 22:16.360]  has a simple, basic function.
+[22:16.360 --> 22:21.480]  You can make an adjustment to the camera's iris by changing the toggle switch to iris
+[22:21.640 --> 22:27.120]  and then moving the dial up or down to change the f-stop, which will allow you to compensate
+[22:27.120 --> 22:32.840]  for a brighter image if the lighting is dark or a darker image if the conditions are bright.
+[22:32.840 --> 22:39.560]  This is also something that can be set to automatic, to do automatically, which I like
+[22:39.560 --> 22:43.360]  when it comes to white balancing because if there is a slight change in the lighting,
+[22:43.360 --> 22:47.480]  the camera will automatically adjust the image, which is helpful.
+[22:47.480 --> 22:51.200]  As long as you're not constantly changing the lighting and it's constantly having to
+[22:51.200 --> 22:57.240]  compensate, it's not so noticeable as to be distracting.
+[22:57.240 --> 23:02.480]  So once I got my f-stop set where I want it, which is a little bit of glow coming off of
+[23:02.480 --> 23:07.040]  the brightest spot in my image, I will now change the white balance to get the color
+[23:07.040 --> 23:11.400]  tones looking like they should.
+[23:11.400 --> 23:13.720]  There's a few different settings on this camera.
+[23:13.720 --> 23:14.960]  Yours may look similar.
+[23:14.960 --> 23:17.240]  If it's different, don't worry about it.
+[23:17.240 --> 23:18.240]  Just do the best you can.
+[23:18.240 --> 23:23.600]  I'll do a quick rundown of what they mean and then tell you what I think is a good default.
+[23:23.600 --> 23:28.240]  I don't want to dwell on this too much since each room will be set up differently and the
+[23:28.240 --> 23:31.480]  lighting may be inconsistent, so results may vary.
+[23:31.480 --> 23:37.480]  The first setting on the switch is AETW, which stands for Auto Tracing White Balance.
+[23:37.480 --> 23:42.080]  This is generally a fully automatic mode, which tries to guess the correct white balance.
+[23:42.080 --> 23:46.000]  It works by assuming the brightest parts of your image are white objects and will try
+[23:46.000 --> 23:51.220]  to correct the image so that the objects appear true white.
+[23:51.220 --> 23:54.040]  This is what I will typically use in most scenarios.
+[23:54.040 --> 23:58.560]  The end goal here is to get the image you see in your viewfinder to look as close to
+[23:58.560 --> 24:00.640]  what you see with the naked eye.
+[24:00.640 --> 24:06.680]  I set the switch to AETW, then press the white balance button on the front of the camera
+[24:06.840 --> 24:11.960]  and wait for the message in the display to indicate that the white balance is OK.
+[24:11.960 --> 24:18.960]  AWB is Auto White Balance and like Auto Tracing White Balance, it's your camera's best guess
+[24:19.160 --> 24:24.840]  as to what the proper color balance in your image should be depending on the light temperatures.
+[24:24.840 --> 24:26.000]  I'll give an example.
+[24:26.000 --> 24:33.000]  In most indoor settings, you're going to be adjusting for tungsten or fluorescent bulbs
+[24:33.160 --> 24:38.600]  somewhere in the 2,000 to 7,500 Kelvin range.
+[24:38.600 --> 24:45.160]  The fluorescent bulbs in the room I'm recording this image in are probably around 3,200 Kelvin.
+[24:45.160 --> 24:50.800]  I have a preset on this camera for a lighting temperature of 5,600 Kelvin, which is more
+[24:50.800 --> 24:56.600]  in the range of direct natural sunlight and is going to look too dim and too orange for
+[24:56.600 --> 24:58.520]  indoor light.
+[24:58.560 --> 25:03.400]  When I switch it to the 32 Kelvin preset, you can see that it's much closer to the Auto
+[25:03.400 --> 25:05.360]  Tracing White Balance.
+[25:05.360 --> 25:09.480]  They make special white balancing cards that you can purchase from a photography equipment
+[25:09.480 --> 25:11.000]  retailer.
+[25:11.000 --> 25:14.640]  You can also use a blank piece of white paper to assist you.
+[25:14.640 --> 25:16.680]  That works just as well.
+[25:16.680 --> 25:20.680]  Zoom in so that the sheet of paper fills the entire frame.
+[25:20.680 --> 25:25.800]  Switch the setting to AETW or whatever preset you may have on your camera that gives you
+[25:25.800 --> 25:27.320]  a true white image.
+[25:27.400 --> 25:32.160]  If skin tones in the LCD don't seem to match what you see with your eyeball, then make
+[25:32.160 --> 25:33.800]  adjustments accordingly.
+[25:33.800 --> 25:38.000]  You just want to try to get it as close as possible to what you perceive visually and
+[25:38.000 --> 25:42.000]  not have a harsh yellowish tint to your image.
+[25:49.000 --> 25:51.240]  Shutter, Iris, and Gain.
+[25:51.240 --> 25:55.120]  If you're using a camera that has a button or setting to change the shutter speed, I
+[25:55.120 --> 25:56.120]  would turn it off.
+[25:56.440 --> 26:01.320]  As we covered briefly, the Iris controls the size and amount of light coming through the
+[26:01.320 --> 26:03.640]  aperture of your camera.
+[26:03.640 --> 26:09.360]  On this camera, there's a switch that allows you to manually adjust the f-stops and open
+[26:09.360 --> 26:13.320]  or close the aperture using the dial or ring.
+[26:13.320 --> 26:18.080]  You can also turn on the Auto Iris button and it will adjust your f-stop whenever a
+[26:18.080 --> 26:24.800]  change occurs in the image that necessitates more or less light to be exposed to the sensor.
+[26:24.800 --> 26:29.480]  This might be a little distracting, however, so I recommend getting your lighting figured
+[26:29.480 --> 26:32.840]  out and manually setting your exposure to a fixed amount.
+[26:32.840 --> 26:38.520]  If you're working under low lighting conditions and you have your aperture all the way open,
+[26:38.520 --> 26:43.040]  but you're not satisfied with how dark the image might be, you might have an option to
+[26:43.040 --> 26:48.920]  boost or lower the image gain, which increases and decreases the magnitude of amplification
+[26:48.920 --> 26:51.120]  and light sensitivity.
+[26:51.120 --> 26:55.840]  Your camera will probably have automatic or manual functions, or both, for controlling
+[26:55.840 --> 27:00.920]  the gain, and on this camera, there's factory settings which can be changed by positioning
+[27:00.920 --> 27:09.280]  a switch to low, middle, or high gain, which is measured in units of dB or decibels.
+[27:09.280 --> 27:12.880]  Low is equal to 0 dB or no gain.
+[27:12.880 --> 27:18.960]  Middle gain is typically equal to 6 or 9 decibels, which has the effect on your image of adding
+[27:19.960 --> 27:25.360]  the amount of light, and finally, high gain, which adds anywhere between 12 to 18 decibels
+[27:25.360 --> 27:29.600]  or up to 3 times the amount of light to your image.
+[27:29.600 --> 27:30.760]  Now this carries a caveat.
+[27:30.760 --> 27:35.980]  The higher the gain, the more this is going to degrade your image quality by adding noise
+[27:35.980 --> 27:41.240]  and grain to the frame, so keep in mind that this is sort of a last resort if you want
+[27:41.240 --> 27:45.200]  to keep things looking pretty but visible.
+[27:45.200 --> 27:50.240]  Very quick, we'll cover a couple of common camera cautionaries and what to do to fix
+[27:50.240 --> 27:55.680]  an issue.
+[27:55.680 --> 27:58.840]  Camera troubleshooting.
+[27:58.840 --> 28:03.220]  Let's launch into some common problems you might encounter and how best to resolve them.
+[28:03.220 --> 28:07.120]  Number one, let me get this out of the way right off the bat.
+[28:07.120 --> 28:10.760]  The best thing to do is familiarize yourself with the equipment you're using.
+[28:10.760 --> 28:15.120]  Do some research, test out some different setups if something isn't working right,
+[28:15.120 --> 28:18.760]  and make plenty of time for yourself before the start of your program to fix any potential
+[28:18.760 --> 28:19.760]  issues.
+[28:19.760 --> 28:24.000]  We recommend at least one and a half to two hours if possible.
+[28:24.000 --> 28:26.480]  As we covered, make sure to always be recording.
+[28:26.480 --> 28:29.720]  Hopefully your camera is equipped with a memory card slot.
+[28:29.720 --> 28:35.960]  We use 32 or 64 gigabyte SD cards to record all of our programs while simultaneously streaming
+[28:35.960 --> 28:37.520]  audio and video.
+[28:37.520 --> 28:41.800]  This serves as a backup in case the unthinkable happens and your capture device freezes or
+[28:41.800 --> 28:46.440]  your internet goes down or lightning strikes or something disrupts your ability to broadcast
+[28:46.440 --> 28:52.000]  to our media server, you'll always have some sort of a backup recording to use for archiving
+[28:52.000 --> 28:53.000]  purposes.
+[28:53.000 --> 28:57.320]  I feel like it goes without saying, but in our highly developed technological society,
+[28:57.320 --> 29:02.800]  please never forget that technology is our friend, but we are also at its mercy.
+[29:02.800 --> 29:06.640]  Don't compete with technology, try to complete it.
+[29:06.640 --> 29:10.640]  So you'll want to format your SD card, we covered this a little bit ago.
+[29:10.640 --> 29:14.200]  Make sure to start recording and start streaming as soon as possible.
+[29:14.200 --> 29:18.840]  Don't forget to press the record or broadcast buttons.
+[29:18.840 --> 29:23.520]  Try not to run the camera off battery power, instead plug the power cable or adapter into
+[29:23.520 --> 29:28.880]  a surge protected power strip, preferably one that has grounded outlets.
+[29:28.880 --> 29:33.800]  If you do lose power, again, don't panic, capture devices, battery power will allow
+[29:33.800 --> 29:38.240]  you to save your progress and pause until power can be restored.
+[29:38.240 --> 29:42.120]  Obviously you've been recording and broadcasting in Wirecast and you can stop the recording
+[29:42.120 --> 29:47.760]  that is being written to your hard drive and resume once you get power back to your camera.
+[29:47.760 --> 29:52.040]  In case the files being written to your SD card were corrupted, you'll have the hard
+[29:52.040 --> 29:55.440]  drive archive copy as backup.
+[29:55.440 --> 30:00.840]  Make sure to turn off your camera and unplug it from the outlet before removing the SD
+[30:00.840 --> 30:01.840]  card.
+[30:01.840 --> 30:04.480]  Set it aside and replace it with a backup card.
+[30:04.480 --> 30:08.560]  You should always have at least one to two pre-formatted blank cards set aside, ready
+[30:08.560 --> 30:11.160]  to use in the event of an emergency.
+[30:11.160 --> 30:16.920]  SD cards are relatively inexpensive and a decent investment since you can use them.
+[30:16.920 --> 30:21.160]  Copy the contents to a separate storage device like an external hard drive or upload them
+[30:21.160 --> 30:23.600]  to a cloud storage site.
+[30:23.600 --> 30:27.080]  Then you can reformat the cards and reuse them over and over.
+[30:27.080 --> 30:32.820]  For the SD card that you removed, we'll check it out later to see if the files can be repaired
+[30:32.980 --> 30:38.300]  but depending on how often your files automatically increment, some content on the card may have
+[30:38.300 --> 30:39.920]  been lost.
+[30:39.920 --> 30:44.540]  This is why it's crucial to have a few redundancies in place so that the content is not completely
+[30:44.540 --> 30:45.540]  lost.
+[30:45.540 --> 30:49.060]  Most of the time everything will run fine and you won't ever need to resort to using
+[30:49.060 --> 30:54.060]  your backup recordings but in the circumstance that you do, you'll be glad that you put these
+[30:54.060 --> 30:56.740]  preventative measures in place.
+[30:56.780 --> 31:01.780]  From here we'll proceed now to the next chapter which is how to work with Wirecast.
+[31:12.140 --> 31:16.460]  So with Wirecast you have a couple of ways of getting the application up and running.
+[31:16.460 --> 31:21.980]  I'm going to show you the way you're probably used to doing and then show another way to
+[31:21.980 --> 31:27.940]  get your webcast going without always having to launch the application from the event manager.
+[31:27.940 --> 31:32.540]  So as Sam just demonstrated, you can log into the event manager and then search for your
+[31:32.540 --> 31:37.580]  upcoming webcast if it's not showing up on the dashboard.
+[31:37.580 --> 31:42.580]  Once you find it, click on the title and this will bring you to the encoding tab of the
+[31:42.580 --> 31:44.180]  selected program.
+[31:44.180 --> 31:49.220]  If all the viewer URLs are empty, simply click on the encoder selection drop down button
+[31:49.340 --> 31:54.660]  and select Wirecast Typical and those URLs will populate.
+[31:54.660 --> 31:58.860]  Verify that the file name is correct and then click the save button.
+[31:58.860 --> 32:03.660]  Then change the encoder selection back to Wirecast High Quality and click save.
+[32:03.660 --> 32:06.020]  Then launch Wirecast.
+[32:06.020 --> 32:10.620]  This will allow you to save and open a Wirecast profile that is pre-configured with the correct
+[32:10.620 --> 32:13.100]  file name and output settings.
+[32:13.100 --> 32:17.660]  You may still need to add your camera shot, configure the audio source and then add any
+[32:17.860 --> 32:22.500]  break or pre-roll, post-roll elements into the profile, but once everything has been
+[32:22.500 --> 32:27.500]  thoroughly tested and your video and audio is being picked up through the USB dongle
+[32:27.500 --> 32:32.140]  and inputting into Wirecast, go ahead and begin recording and broadcasting and then
+[32:32.140 --> 32:37.420]  open the viewer to make sure that you see the stream coming through for you.
+[32:37.420 --> 32:43.700]  Another way if you happen to experience some weird issues where you're not able to open
+[32:43.700 --> 32:48.780]  a profile on your latest version of Wirecast, locate the application on your capture appliance
+[32:48.780 --> 32:53.700]  by doing a search or adding a shortcut to your desktop.
+[32:53.700 --> 32:57.980]  Open the application and once you have a blank profile open, click on the output settings
+[32:57.980 --> 33:00.700]  button in the menu toolbar.
+[33:00.700 --> 33:06.900]  I'm working on Wirecast 7, so if your version is older, this will be called broadcast and
+[33:06.900 --> 33:10.020]  it looks like this.
+[33:10.020 --> 33:13.780]  You will then be prompted to add a blah blah blah blah blah.
+[33:13.780 --> 33:19.500]  You know what, if you have some detailed questions about the specifics of Wirecast, email Sam
+[33:19.500 --> 33:20.500]  or myself.
+[33:20.500 --> 33:26.020]  We'll set up a call with you to discuss what you can do to change your stream quality,
+[33:26.020 --> 33:29.980]  make sure that your camera shots are properly composed and that you're getting the most
+[33:29.980 --> 33:31.820]  out of your broadcast.
+[33:31.820 --> 33:37.340]  Key things to pay attention to are, number one, set your destination RTMP output to our
+[33:37.740 --> 33:39.060]  media server.
+[33:39.060 --> 33:42.980]  For most of you, it's going to appear as it does on the screen right now.
+[33:42.980 --> 33:47.980]  Number two, the stream name, make sure that the stream name as it appears in this field
+[33:47.980 --> 33:53.700]  matches whatever it is in the video URLs for your program and the event manager and that
+[33:53.700 --> 33:56.620]  there are no capitalized letters.
+[33:56.620 --> 33:58.580]  Number three, encoder selection.
+[33:58.580 --> 34:06.300]  Choose a default H264 preset, one that you're able to stream on your connection.
+[34:06.340 --> 34:10.180]  We'll cover this a little bit more in chapter five.
+[34:10.180 --> 34:13.540]  And number four, make sure that all of your camera shots have been added.
+[34:13.540 --> 34:16.820]  The correct audio source has been assigned to your camera shot.
+[34:16.820 --> 34:20.740]  The aspect ratio has been adjusted accordingly so that it appears the way it should.
+[34:20.740 --> 34:26.180]  It's not stretched out or anything like that in your preview monitor in Wirecast.
+[34:26.180 --> 34:29.540]  You're seeing audio levels in the main audio meter.
+[34:29.540 --> 34:34.000]  All your break and pre-roll videos have been added and that you're not plugging and unplugging
+[34:34.000 --> 34:38.680]  your video adapter into different USB ports without also editing or re-adding your camera
+[34:38.680 --> 34:40.960]  shot in Wirecast.
+[34:40.960 --> 34:46.760]  This could be extremely problematic in Wirecast, especially older versions that may not recognize
+[34:46.760 --> 34:51.800]  your particular adapter despite using different USB ports.
+[34:51.800 --> 34:56.580]  Speaking of older versions of Wirecast, suffice it to say, if you're still on Wirecast 4,
+[34:56.580 --> 34:57.840]  we need to talk.
+[34:57.840 --> 35:01.400]  It's outdated, it's buggy, and it's not going to get any better.
+[35:01.400 --> 35:04.760]  If you've been using it for a while, it's very likely that you've experienced some of
+[35:04.760 --> 35:08.080]  these issues from time to time, typically.
+[35:08.080 --> 35:14.220]  This includes things like video freeze frames, audio and video sources not being recognized
+[35:14.220 --> 35:20.500]  despite installing driver updates, the semi-frequent crashes, and nonspecific errors.
+[35:20.500 --> 35:27.480]  This is because Telestream no longer offers updates or support for older versions of Wirecast,
+[35:27.480 --> 35:31.160]  so it's becoming quickly obsolete.
+[35:31.160 --> 35:35.620]  If you'd like to discuss upgrading to the latest version of Wirecast, or if you have
+[35:35.620 --> 35:40.440]  another method or equipment available to you that you'd like to try out, TriCaster for
+[35:40.440 --> 35:45.760]  example, reach out to Sam or myself and we'd love to explore this further with you and
+[35:45.760 --> 35:51.680]  make sure that you have a device that meets the system requirements and has the appropriate
+[35:51.680 --> 35:55.560]  media inputs and interface to run things without issue.
+[35:55.560 --> 35:59.720]  Real quick before we move on, I just want to showcase a cool feature available in certain
+[35:59.720 --> 36:05.400]  versions of Wirecast that some folks are already well aware of and are utilizing to
+[36:05.400 --> 36:07.360]  great effect.
+[36:07.360 --> 36:13.800]  Here's a look at not the latest version of Wirecast, this is Wirecast 8.
+[36:13.800 --> 36:15.800]  The interface and features are very similar.
+[36:15.800 --> 36:20.000]  If you haven't played around with some of the cool newer features, we encourage you
+[36:20.000 --> 36:25.980]  to do so, otherwise this might be a whole topic unto itself for a future webinar.
+[36:25.980 --> 36:29.860]  We'll just look briefly at the desktop presenter app.
+[36:29.860 --> 36:35.300]  Now you can use it to integrate a live feed of presentation slides and layer it alongside
+[36:35.300 --> 36:40.420]  or inside that of your camera shot, not have to deal with uploading slides to the event
+[36:40.420 --> 36:42.740]  manager or anything like that.
+[36:42.740 --> 36:48.620]  This takes a little preparation, but it involves installing a desktop presenter application
+[36:48.620 --> 36:53.300]  on the computer that is being used to run the presentation materials, as long as the
+[36:53.340 --> 36:57.740]  presentation computer and the computer running Wirecast are connected to the same network,
+[36:57.740 --> 37:03.700]  you can add the desktop of the presentation computer as a shot in Wirecast.
+[37:03.700 --> 37:08.340]  This will allow you to combine your camera shot and the slides being presented into a
+[37:08.340 --> 37:14.700]  single stream without the need for a video switcher or multiple video inputs going into
+[37:14.700 --> 37:16.020]  your broadcast device.
+[37:16.020 --> 37:20.460]  Just something to keep in mind if you want to make your job a little easier, it's pretty
+[37:20.460 --> 37:21.780]  cool.
+[37:21.820 --> 37:27.560]  You can also take mp4 files and drop them into Wirecast if you want video clips with
+[37:27.560 --> 37:29.660]  smoothness and clarity.
+[37:29.660 --> 37:34.060]  You can also assign multiple audio sources to a single shot, I could go on and on for
+[37:34.060 --> 37:39.060]  days about how amazing Wirecast is, but instead we'll just move on.
+[37:39.060 --> 37:53.180]  This chapter of the program is basically just a quick reminder that it never hurts to be
+[37:53.180 --> 37:57.780]  mindful of what you're doing or not doing during a live event.
+[37:57.780 --> 38:03.140]  The hope is that once you get things rolling, you can sit back and relax and let the technology
+[38:03.140 --> 38:08.740]  do what folks way smarter than me have spent millions of dollars designing it to do.
+[38:08.740 --> 38:13.540]  With that in mind, working in a realm where we rely so much on technology to work, we
+[38:13.540 --> 38:16.540]  are always at the mercy of technology.
+[38:16.540 --> 38:22.780]  It's good to have backups and redundancies in place so that if the unpredictable occurs,
+[38:22.780 --> 38:26.740]  lightning strikes, there's a power failure, or you wind up in the upside down like Will
+[38:26.740 --> 38:31.860]  Byers, your recording can be salvaged even if your live event can't.
+[38:31.860 --> 38:36.260]  Shit happens and someone has to deal with it, and that someone is going to be you.
+[38:36.260 --> 38:40.420]  Whether you want it to be or not, you're ultimately the person everyone looks to for answers if
+[38:40.420 --> 38:44.460]  some piece of technology is not functioning properly.
+[38:44.460 --> 38:48.140]  Hopefully you are savvy enough to anticipate any curveballs that might get thrown your
+[38:48.140 --> 38:54.940]  way, but most of this goes without saying, sometimes weird shit happens like all the
+[38:54.940 --> 38:55.940]  time.
+[38:55.940 --> 38:59.820]  Here's a list of things I recommend you keep in mind while webcasting based on situations
+[38:59.820 --> 39:02.820]  I've found myself in over the years.
+[39:02.820 --> 39:05.980]  Number one, always monitor your audio.
+[39:05.980 --> 39:10.020]  Have some headphones on, connect it to your camera or laptop, listen to make sure you're
+[39:10.020 --> 39:15.020]  hearing clear audio whenever someone is talking, check the audio meters on your camera's LCD
+[39:15.020 --> 39:18.020]  screen, or the master audio meter in Wirecast.
+[39:18.020 --> 39:22.460]  You want to be the first person to know if you're having audio issues so that you can
+[39:22.460 --> 39:24.820]  act and correct them immediately.
+[39:24.820 --> 39:27.940]  Number two, always monitor your video.
+[39:27.940 --> 39:32.300]  Like with audio, actively monitor your video while the webcast is happening.
+[39:32.300 --> 39:36.500]  Make sure that the recording is going, that the image is in focus, the lighting is not
+[39:36.500 --> 39:41.060]  blown out or too bright, and that your subject is appearing within the frame.
+[39:41.060 --> 39:42.420]  It happens from time to time.
+[39:42.420 --> 39:46.380]  If you have a mobile presenter who paces around the front of the room and you're not tracking
+[39:46.380 --> 39:50.340]  with them, the camera is locked in a static position, we can still hear the disembodied
+[39:50.340 --> 39:53.740]  voice but the presenter has walked off the screen, and if you're not paying attention
+[39:53.740 --> 39:58.060]  you're just going to be left with a shot of an empty chair or podium.
+[39:58.060 --> 40:00.980]  Number three, always have a USB flash drive handy.
+[40:00.980 --> 40:04.820]  This is great for getting revised or updated presentation materials from the speakers
+[40:04.820 --> 40:07.580]  in case they don't have their own.
+[40:07.580 --> 40:09.980]  Number four, always have a backup SD card.
+[40:09.980 --> 40:15.660]  I recommend recording to SD cards if you have the capability to do so, and it is always
+[40:15.660 --> 40:22.100]  a good idea to have a 32 or 64 gigabyte card that has already been formatted for your camera
+[40:22.100 --> 40:24.180]  ready to go in case you need to utilize it.
+[40:24.180 --> 40:30.100]  Like I said, these are cheap, pick up a few, they're like 10 to 25 bucks, and they will
+[40:30.380 --> 40:32.060]  save your life.
+[40:32.060 --> 40:35.260]  Number five, test your equipment beforehand.
+[40:35.260 --> 40:40.220]  Test the camera, mics, internet speed, your broadcast, slides, your internet speed, video
+[40:40.220 --> 40:43.500]  clips, and oh yeah, your internet speed.
+[40:43.500 --> 40:47.420]  Do a full setup at the location you will be broadcasting from, at least a day before your
+[40:47.420 --> 40:49.500]  scheduled event if possible.
+[40:49.500 --> 40:52.140]  Make sure everything is good to go and that you're not going to walk in the morning of
+[40:52.140 --> 40:56.780]  your webcast and find that your video adapter is not working all of a sudden, oh yeah, and
+[40:56.780 --> 41:00.380]  have a backup video and audio adapter while you're at it.
+[41:00.380 --> 41:03.420]  Number six, expect the unexpected.
+[41:03.420 --> 41:06.300]  Sounds cliche, and it is, for a damn good reason.
+[41:06.300 --> 41:10.900]  I'm sure most of you are familiar with the concept of force majeure, or perhaps even
+[41:10.900 --> 41:13.300]  Murphy's law.
+[41:13.300 --> 41:15.260]  So you know that strange things happen.
+[41:15.260 --> 41:19.580]  You lock down your camera, but mysteriously, it moved.
+[41:19.580 --> 41:23.780]  You lost your video and audio feed and wire cast, and you swear you didn't bump the cable,
+[41:23.780 --> 41:24.780]  it moved on its own.
+[41:25.780 --> 41:30.260]  You thought you put down your coffee cup right here, and now it's over there.
+[41:30.260 --> 41:31.260]  It moved.
+[41:31.260 --> 41:36.260]  Point is, this could be a lot to keep track of, so develop a consistent system and you'll
+[41:36.260 --> 41:37.260]  be fine.
+[41:49.780 --> 41:51.540]  This chapter is a bit of an overview.
+[41:51.540 --> 41:54.180]  Again, thank you all for sticking with us so far.
+[41:54.180 --> 41:57.540]  We hope this has been informative and worthwhile.
+[41:57.540 --> 42:01.860]  We're nerds, so we thank you for humoring us and allowing us to indulge in our nerd
+[42:01.860 --> 42:03.340]  interests.
+[42:03.340 --> 42:08.220]  I touched on this very briefly, but here again are the minimum and recommended system requirements
+[42:08.220 --> 42:13.820]  for running Wirecast on both Macs and PCs, and here's a full list of equipment we use
+[42:13.820 --> 42:15.980]  for webcasting.
+[42:15.980 --> 42:21.300]  As for internet requirements, you'll want to preferably be on a wired connection with
+[42:21.300 --> 42:26.980]  static IP as opposed to a dynamic IP, if possible, and have a dedicated amount of
+[42:26.980 --> 42:33.140]  bandwidth that you're not having to share with everyone else at your conference or office.
+[42:33.140 --> 42:39.660]  On a dedicated line, if you have 10 megabits per second, you'll always have at least that,
+[42:39.660 --> 42:44.660]  whereas on a shared connection, that 10 megabits per second gets split up among all users and
+[42:44.660 --> 42:46.300]  devices.
+[42:46.300 --> 42:51.300]  If you're unsure about what you have, you can contact your IT manager or internet service
+[42:51.300 --> 42:55.820]  provider and have them help you if you're running into issues of not having a consistent
+[42:55.820 --> 43:01.660]  upload speed, or you can contact us and we can help you to troubleshoot.
+[43:01.660 --> 43:07.340]  You'll also want to make sure that ports 1935 and 80 are unblocked on your firewall, as
+[43:07.340 --> 43:14.100]  those allow RTMP protocols to send and receive data from your broadcasting laptop to our
+[43:14.100 --> 43:15.780]  media server.
+[43:15.780 --> 43:20.140]  If you ever get an error while broadcasting that says something to the effect of RTMP
+[43:20.140 --> 43:24.660]  destination cannot be found, it's very likely that a port has been blocked, or the wrong
+[43:24.660 --> 43:30.500]  address has been entered in your output destination, or there's a dip in your connectivity and
+[43:30.500 --> 43:33.540]  the link to our server needs to be reestablished.
+[43:33.540 --> 43:38.820]  With that, we'd also like to explain a rule of thumb when it comes to upload speed and
+[43:38.820 --> 43:52.060]  broadcast settings.
+[43:52.060 --> 43:53.060]  So here it is.
+[43:53.060 --> 43:56.540]  I'll try to put this in the simplest, most basic terms that I can.
+[43:56.540 --> 44:00.820]  Your upload speed is going to directly affect the quality of the broadcast you're able to
+[44:00.820 --> 44:02.660]  stream out.
+[44:02.660 --> 44:08.300]  If you go into the output settings in Wirecast and you set the encoding quality to 720p with
+[44:08.300 --> 44:15.740]  a video bitrate of 2 megabits per second, you are streaming out at 2 megabits per second,
+[44:15.740 --> 44:20.260]  and you would better have at least 2 megabits per second as your upload speed.
+[44:20.260 --> 44:24.180]  We suggest raising that threshold and giving yourself a higher ceiling, though, when it
+[44:24.180 --> 44:29.540]  comes to your upload speed and your output quality, since they are directly proportional.
+[44:29.540 --> 44:34.180]  If you're streaming out at 2 megabits per second, it's best to be on a connection with
+[44:35.020 --> 44:41.580]  5 to 10 times that amount of upload speed, so about 10 to 20 megabits per second.
+[44:41.580 --> 44:47.700]  If you only have a dedicated amount of 5 megabits per second upload speed, maybe drop your encoding
+[44:47.700 --> 44:51.020]  quality to 1 megabit per second.
+[44:51.020 --> 44:56.520]  Finding a happy medium is key, where you can stream a quality broadcast without having
+[44:56.520 --> 45:01.340]  to run into issues of latency, lag, and lost connections.
+[45:01.340 --> 45:07.180]  Don't be confused with missed connections, something different entirely.
+[45:07.180 --> 45:11.260]  Keep in mind that what you're pushing out is also affecting what your audience is pulling
+[45:11.260 --> 45:12.780]  down.
+[45:12.780 --> 45:16.820]  If they're on a connection that gives them at least 2 megabits per second down, they
+[45:16.820 --> 45:18.580]  should be fine.
+[45:18.580 --> 45:22.660]  Here are some other suggestions made by popular media streaming providers.
+[45:22.660 --> 45:28.460]  They recommend about an average of 4 megabits per second down for standard definition videos
+[45:28.460 --> 45:30.460]  at 720p.
+[45:30.460 --> 45:34.040]  For higher definition, that number goes up.
+[45:34.040 --> 45:39.300]  Most of these providers also use performance-enhancing techniques when slower speeds are encountered.
+[45:39.300 --> 45:45.060]  Some have added local caching of videos around the US in order to compensate for this issue.
+[45:45.060 --> 45:48.820]  Adaptive bitrate streaming is another feature that tempers the quality of the stream being
+[45:48.820 --> 45:53.020]  delivered to your device based on your download speed.
+[45:53.020 --> 45:57.340]  So if you're trying to stream a video in high definition, you're connected to public Wi-Fi
+[45:57.660 --> 46:04.180]  or using your wireless provider's 3G bandwidth for data, and it's just not happening, adaptive
+[46:04.180 --> 46:09.780]  bitrate will drop you down to a standard or a lower quality stream to reduce the amount
+[46:09.780 --> 46:11.340]  of buffering.
+[46:11.340 --> 46:15.620]  InReach is in the process of migrating our Learning Center viewer to a platform that
+[46:15.620 --> 46:20.900]  offers this as a standard feature, so be aware that this will be an improvement for you and
+[46:20.900 --> 46:22.780]  your learners in 2019.
+[46:27.340 --> 46:38.740]  Hopefully by now, you're coming away from this webinar not feeling too overwhelmed,
+[46:38.740 --> 46:43.580]  but perhaps a little bit wiser when it comes to running your webcast without issue.
+[46:43.580 --> 46:49.020]  Your worries have no doubt vanished, and as we hoped to set out to do, you know what to
+[46:49.020 --> 46:50.940]  do if shit hits the fan.
+[46:50.940 --> 46:55.900]  We ran down the requiem of requirements and filled you in on what's up with the upload
+[46:56.140 --> 47:01.260]  and download of internet connection speeds, but no matter how many webcasts you run and
+[47:01.260 --> 47:05.980]  no matter how often you run them, it's always best to be prepared no matter what circumstances
+[47:05.980 --> 47:11.140]  you may find yourself in, whether it's your office, some hotel, or who knows, the upside
+[47:11.140 --> 47:15.940]  down where shit gets real weird and nothing is normal.
+[47:15.940 --> 47:20.060]  You can rest assured that InReach has your back, and if you ever run into a problem that
+[47:20.060 --> 47:25.880]  you cannot solve on your own, do some research or please contact us and we'll do everything
+[47:25.880 --> 47:30.120]  we can to slay the beasts and monsters and shit.
+[47:30.120 --> 47:33.120]  Until next time, this is Kevin and Sam signing off.
+[47:33.120 --> 47:34.120]  Peace.
+[47:34.120 --> 47:38.960]  Oh, and if you have any questions, please feel free to direct them towards my co-presenter
+[47:38.960 --> 47:39.960]  Sam.
+[47:39.960 --> 47:40.960]  Now.
+[47:40.960 --> 47:41.840]  Thank you.
