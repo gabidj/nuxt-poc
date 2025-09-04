@@ -116,111 +116,135 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed } from 'vue'
 
+// Props
 const props = defineProps({
-  isProcessing: { type: Boolean, default: false },
-  acceptedTypes: { type: String, default: "*" },
-  allowMultiple: { type: Boolean, default: false },
-  maxFileSize: { type: Number, default: 10 * 1024 * 1024 },
-});
+  isProcessing: {
+    type: Boolean,
+    default: false
+  },
+  acceptedTypes: {
+    type: String,
+    default: '*'
+  },
+  allowMultiple: {
+    type: Boolean,
+    default: false
+  },
+  maxFileSize: {
+    type: Number,
+    default: 10 * 1024 * 1024 // 10MB
+  }
+})
 
-const emit = defineEmits(["file-uploaded", "upload-progress"]);
+// Emits
+const emit = defineEmits(['file-uploaded', 'upload-progress'])
 
-const isDragOver = ref(false);
-const uploadedFile = ref(null);
-const filePreview = ref(null);
-const progress = ref(0);
+// Reactive data
+const isDragOver = ref(false)
+const uploadedFile = ref(null)
+const filePreview = ref(null)
+const progress = ref(0)
 
+// Computed properties
 const uploadAreaClasses = computed(() => ({
-  "border-gray-300 hover:border-primary-400 hover:bg-primary-50/50":
-    !isDragOver.value && !props.isProcessing,
-  "border-primary-500 bg-primary-50": isDragOver.value,
-  "border-green-300 bg-green-50":
-    uploadedFile.value && !props.isProcessing,
-  "border-primary-400 bg-primary-50": props.isProcessing,
-}));
+  'border-gray-300 hover:border-primary-400 hover:bg-primary-50/50': !isDragOver.value && !props.isProcessing,
+  'border-primary-500 bg-primary-50': isDragOver.value,
+  'border-green-300 bg-green-50': uploadedFile.value && !props.isProcessing,
+  'border-primary-400 bg-primary-50': props.isProcessing
+}))
 
 const acceptedTypesText = computed(() => {
-  if (props.acceptedTypes === "*") return "All file types supported";
-  if (props.acceptedTypes.includes("image"))
-    return "Images supported (JPG, PNG, GIF, etc.)";
-  if (props.acceptedTypes.includes("video"))
-    return "Videos supported (MP4, MOV, AVI, etc.)";
-  return `Supported types: ${props.acceptedTypes}`;
-});
+  if (props.acceptedTypes === '*') return 'All file types supported'
+  if (props.acceptedTypes.includes('image')) return 'Images supported (JPG, PNG, GIF, etc.)'
+  if (props.acceptedTypes.includes('video')) return 'Videos supported (MP4, MOV, AVI, etc.)'
+  return `Supported types: ${props.acceptedTypes}`
+})
 
+// Methods
 const handleDragOver = () => {
-  isDragOver.value = true;
-};
+  isDragOver.value = true
+}
 
 const handleDragLeave = (event) => {
   if (!event.currentTarget.contains(event.relatedTarget)) {
-    isDragOver.value = false;
+    isDragOver.value = false
   }
-};
+}
 
 const handleDrop = (event) => {
-  event.preventDefault();
-  isDragOver.value = false;
-  const files = event.dataTransfer.files;
-  if (files.length > 0) handleFiles(files);
-};
+  event.preventDefault()
+  isDragOver.value = false
+
+  const files = event.dataTransfer.files
+  if (files.length > 0) {
+    handleFiles(files)
+  }
+}
 
 const handleFileSelect = (event) => {
-  const files = event.target.files;
-  if (files.length > 0) handleFiles(files);
-};
+  const files = event.target.files
+  if (files.length > 0) {
+    handleFiles(files)
+  }
+}
 
 const handleFiles = (files) => {
-  const file = files[0];
+  const file = files[0] // Handle single file for now
 
   if (file.size > props.maxFileSize) {
-    alert(`File size exceeds ${formatFileSize(props.maxFileSize)} limit`);
-    return;
+    alert(`File size exceeds ${formatFileSize(props.maxFileSize)} limit`)
+    return
   }
 
-  uploadedFile.value = file;
+  uploadedFile.value = file
 
+  // Create preview for images
   if (isImageFile(file)) {
-    const reader = new FileReader();
-    reader.onload = (e) => (filePreview.value = e.target.result);
-    reader.readAsDataURL(file);
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      filePreview.value = e.target.result
+    }
+    reader.readAsDataURL(file)
   }
 
-  emit("file-uploaded", file);
-  simulateProgress();
-};
+  emit('file-uploaded', file)
+  simulateProgress()
+}
 
 const simulateProgress = () => {
-  progress.value = 0;
+  progress.value = 0
   const interval = setInterval(() => {
-    progress.value += Math.random() * 15;
+    progress.value += Math.random() * 15
     if (progress.value >= 100) {
-      progress.value = 100;
-      clearInterval(interval);
+      progress.value = 100
+      clearInterval(interval)
     }
-    emit("upload-progress", progress.value);
-  }, 200);
-};
+    emit('upload-progress', progress.value)
+  }, 200)
+}
 
 const resetUpload = () => {
-  uploadedFile.value = null;
-  filePreview.value = null;
-  progress.value = 0;
-};
+  uploadedFile.value = null
+  filePreview.value = null
+  progress.value = 0
+}
 
-const isImageFile = (file) => file && file.type.startsWith("image/");
+const isImageFile = (file) => {
+  return file && file.type.startsWith('image/')
+}
 
 const formatFileSize = (bytes) => {
-  if (bytes === 0) return "0 Bytes";
-  const k = 1024;
-  const sizes = ["Bytes", "KB", "MB", "GB"];
-  const i = Math.floor(Math.log(bytes) / Math.log(k));
-  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + " " + sizes[i];
-};
+  if (bytes === 0) return '0 Bytes'
+  const k = 1024
+  const sizes = ['Bytes', 'KB', 'MB', 'GB']
+  const i = Math.floor(Math.log(bytes) / Math.log(k))
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
+}
 </script>
 
 <style scoped>
-/* Tailwind handles most of the styles */
+/* Add any custom styles here if needed */
+/* Tailwind classes handle most styling */
 </style>

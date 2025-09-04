@@ -1,26 +1,26 @@
 <template>
-  <div class="bg-white border border-gray-100 rounded-xl p-6">
-    <div class="flex items-center gap-3 mb-6">
-      <div class="w-8 h-8 bg-purple-50 rounded-lg flex items-center justify-center">
-        <svg class="w-4 h-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 fade-in">
+    <div class="flex items-center mb-4">
+      <div class="p-2 bg-accent-100 rounded-lg mr-3">
+        <svg class="h-5 w-5 text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-1l-4 4z" />
         </svg>
       </div>
-      <h3 class="font-semibold text-gray-900">Overview</h3>
+      <h3 class="text-lg font-semibold text-gray-900">Quick Overview</h3>
     </div>
 
     <div v-if="loading" class="space-y-3">
-      <div class="h-4 bg-gray-100 rounded animate-pulse"></div>
-      <div class="h-4 bg-gray-100 rounded animate-pulse w-2/3"></div>
+      <div class="h-4 bg-gray-200 rounded card-loading"/>
+      <div class="h-4 bg-gray-200 rounded card-loading w-2/3"/>
     </div>
 
-    <div v-else class="space-y-4">
-      <p class="text-gray-700 leading-relaxed text-sm">{{ description.content }}</p>
-      <div class="flex flex-wrap gap-2">
+    <div v-else>
+      <p class="text-gray-700 leading-relaxed">{{ description.content }}</p>
+      <div class="mt-4 flex flex-wrap gap-2">
         <span
           v-for="tag in description.tags"
           :key="tag"
-          class="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
+          class="px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium"
         >
           {{ tag }}
         </span>
