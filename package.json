@@ -15,7 +15,15 @@
     "@nuxt/image": "^1.11.0",
     "eslint": "^9.34.0",
     "nuxt": "^4.1.0",
+    "vitest": "^3.2.4",
     "vue": "^3.5.20",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17",
+    "vite-tsconfig-paths": "^5.1.4"
   }
 }

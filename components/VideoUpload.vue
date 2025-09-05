@@ -1,5 +1,15 @@
 <template>
   <div class="max-w-2xl mx-auto">
+    <!-- Error Message -->
+    <div v-if="error" class="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+      <div class="flex items-center">
+        <svg class="w-5 h-5 text-red-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <p class="text-red-800 font-medium">{{ error }}</p>
+      </div>
+    </div>
+
     <!-- Upload Area -->
     <div
       class="relative border-2 border-dashed rounded-xl p-8 text-center transition-all duration-300 ease-in-out"
@@ -15,21 +25,20 @@
         <div class="flex justify-center">
           <div class="p-3 bg-primary-100 rounded-full">
             <svg class="w-8 h-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
             </svg>
           </div>
         </div>
 
         <div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">Upload your files</h3>
-          <p class="text-gray-600 mb-6">Drag and drop your files here, or click to browse</p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Upload your video</h3>
+          <p class="text-gray-600 mb-6">Drag and drop your video here, or click to browse</p>
         </div>
 
         <input
           ref="fileInput"
           type="file"
-          :accept="acceptedTypes"
-          :multiple="allowMultiple"
+          accept="video/*"
           class="hidden"
           @change="handleFileSelect"
         >
@@ -41,7 +50,7 @@
           <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
           </svg>
-          Choose Files
+          Choose Video
         </button>
 
         <p class="text-sm text-gray-500 mt-4">
@@ -61,8 +70,8 @@
         </div>
 
         <div>
-          <h3 class="text-xl font-semibold text-gray-900 mb-2">Processing Files...</h3>
-          <p class="text-gray-600 mb-4">Please wait while we process your upload</p>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Uploading Video...</h3>
+          <p class="text-gray-600 mb-4">Please wait while we upload your video</p>
 
           <!-- Progress Bar -->
           <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
@@ -72,12 +81,12 @@
             />
           </div>
 
-          <p class="text-sm text-gray-500">{{ progress }}% complete</p>
+          <p class="text-sm text-gray-500">{{ Math.round(progress) }}% complete</p>
         </div>
       </div>
 
       <!-- Success State -->
-      <div v-else-if="uploadedFile" class="space-y-4">
+      <div v-else-if="uploadedFile && uploadResult" class="space-y-4">
         <div class="flex justify-center">
           <div class="p-3 bg-green-100 rounded-full">
             <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,8 +97,10 @@
 
         <div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Upload Complete!</h3>
-          <p class="text-gray-600 mb-4">{{ uploadedFile.name }}</p>
-          <p class="text-sm text-gray-500">{{ formatFileSize(uploadedFile.size) }}</p>
+          <p class="text-gray-600 mb-2">{{ uploadedFile.name }}</p>
+          <p class="text-sm text-gray-500 mb-2">{{ formatFileSize(uploadedFile.size) }}</p>
+          <p class="text-sm text-primary-600">UUID: {{ uploadResult.uuid }}</p>
+          <p class="text-sm text-gray-500">Path: {{ uploadResult.path }}</p>
         </div>
 
         <button
@@ -101,15 +112,18 @@
       </div>
     </div>
 
-    <!-- File Preview (if applicable) -->
-    <div v-if="uploadedFile && isImageFile(uploadedFile)" class="mt-6">
+    <!-- Video Preview -->
+    <div v-if="uploadedFile && isVideoFile(uploadedFile) && filePreview" class="mt-6">
       <div class="bg-white rounded-lg shadow-sm border p-4">
-        <h4 class="text-lg font-medium text-gray-900 mb-3">Preview</h4>
-        <img
+        <h4 class="text-lg font-medium text-gray-900 mb-3">Video Preview</h4>
+        <video
           :src="filePreview"
-          :alt="uploadedFile.name"
+          controls
           class="max-w-full h-auto rounded-lg shadow-sm"
+          style="max-height: 400px;"
         >
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
@@ -118,48 +132,29 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-// Props
-const props = defineProps({
-  isProcessing: {
-    type: Boolean,
-    default: false
-  },
-  acceptedTypes: {
-    type: String,
-    default: '*'
-  },
-  allowMultiple: {
-    type: Boolean,
-    default: false
-  },
-  maxFileSize: {
-    type: Number,
-    default: 10 * 1024 * 1024 // 10MB
-  }
-})
-
-// Emits
-const emit = defineEmits(['file-uploaded', 'upload-progress'])
-
 // Reactive data
 const isDragOver = ref(false)
 const uploadedFile = ref(null)
 const filePreview = ref(null)
 const progress = ref(0)
+const isProcessing = ref(false)
+const uploadResult = ref(null)
+const error = ref(null)
+
+// Constants
+const maxFileSize = 1024 * 1024 * 1024 // 1024MB
+const acceptedTypes = 'video/*'
 
 // Computed properties
 const uploadAreaClasses = computed(() => ({
-  'border-gray-300 hover:border-primary-400 hover:bg-primary-50/50': !isDragOver.value && !props.isProcessing,
+  'border-gray-300 hover:border-primary-400 hover:bg-primary-50/50': !isDragOver.value && !isProcessing.value && !uploadedFile.value,
   'border-primary-500 bg-primary-50': isDragOver.value,
-  'border-green-300 bg-green-50': uploadedFile.value && !props.isProcessing,
-  'border-primary-400 bg-primary-50': props.isProcessing
+  'border-green-300 bg-green-50': uploadedFile.value && !isProcessing.value,
+  'border-primary-400 bg-primary-50': isProcessing.value
 }))
 
 const acceptedTypesText = computed(() => {
-  if (props.acceptedTypes === '*') return 'All file types supported'
-  if (props.acceptedTypes.includes('image')) return 'Images supported (JPG, PNG, GIF, etc.)'
-  if (props.acceptedTypes.includes('video')) return 'Videos supported (MP4, MOV, AVI, etc.)'
-  return `Supported types: ${props.acceptedTypes}`
+  return 'Videos supported (MP4, MOV, AVI, WebM, etc.) - Max 1024MB'
 })
 
 // Methods
@@ -190,49 +185,84 @@ const handleFileSelect = (event) => {
   }
 }
 
-const handleFiles = (files) => {
-  const file = files[0] // Handle single file for now
+const handleFiles = async (files) => {
+  const file = files[0]
+  error.value = null
 
-  if (file.size > props.maxFileSize) {
-    alert(`File size exceeds ${formatFileSize(props.maxFileSize)} limit`)
+  // Validate file type
+  if (!file.type.startsWith('video/')) {
+    error.value = 'Only video files are allowed'
+    return
+  }
+
+  // Validate file size
+  if (file.size > maxFileSize) {
+    error.value = `File size exceeds ${formatFileSize(maxFileSize)} limit`
     return
   }
 
   uploadedFile.value = file
+  isProcessing.value = true
+  progress.value = 0
 
-  // Create preview for images
-  if (isImageFile(file)) {
-    const reader = new FileReader()
-    reader.onload = (e) => {
-      filePreview.value = e.target.result
-    }
-    reader.readAsDataURL(file)
+  // Create video preview
+  if (isVideoFile(file)) {
+    const videoUrl = URL.createObjectURL(file)
+    filePreview.value = videoUrl
   }
 
-  emit('file-uploaded', file)
-  simulateProgress()
+  try {
+    await uploadFile(file)
+  } catch (err) {
+    error.value = err.message || 'Upload failed'
+    isProcessing.value = false
+  }
 }
 
-const simulateProgress = () => {
-  progress.value = 0
-  const interval = setInterval(() => {
-    progress.value += Math.random() * 15
-    if (progress.value >= 100) {
-      progress.value = 100
-      clearInterval(interval)
-    }
-    emit('upload-progress', progress.value)
-  }, 200)
+const uploadFile = async (file) => {
+  const formData = new FormData()
+  formData.append('video', file)
+
+  try {
+    // Simulate progress during upload
+    const progressInterval = setInterval(() => {
+      progress.value = Math.min(progress.value + Math.random() * 10, 90)
+    }, 200)
+
+    const response = await $fetch('/api/upload', {
+      method: 'POST',
+      body: formData,
+    })
+
+    clearInterval(progressInterval)
+    progress.value = 100
+    uploadResult.value = response
+    isProcessing.value = false
+
+    console.log('Upload successful:', response)
+  } catch (err) {
+    error.value = err.data?.statusMessage || err.message || 'Upload failed'
+    isProcessing.value = false
+    throw err
+  }
 }
 
 const resetUpload = () => {
   uploadedFile.value = null
   filePreview.value = null
   progress.value = 0
+  uploadResult.value = null
+  error.value = null
+
+  // Clear file input
+  const fileInput = document.querySelector('input[type="file"]')
+  if (fileInput) {
+    fileInput.value = ''
+  }
 }
 
-const isImageFile = (file) => {
-  return file && file.type.startsWith('image/')
+const isVideoFile = (file) => {
+  return file && file.type.startsWith('video/')
 }
 
 const formatFileSize = (bytes) => {

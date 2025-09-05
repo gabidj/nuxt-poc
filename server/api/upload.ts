@@ -1,12 +1,17 @@
-// server/api/upload/video.post.js
-import { writeFile, mkdir } from 'fs/promises'
-import { existsSync } from 'fs'
-import path from 'path'
+// server/api/upload.post.js
 import { randomUUID } from 'crypto'
+import { promises as fs } from 'fs'
+import path from 'path'
 
-const UPLOAD_DIR = 'uploads/videos'
-const MAX_FILE_SIZE = 1024 * 1024 * 1024 // 1GB
-const ALLOWED_TYPES = ['video/mp4', 'video/avi', 'video/mov', 'video/wmv', 'video/webm']
+const MAX_FILE_SIZE = 1024 * 1024 * 1024 // 1024MB in bytes
+const ALLOWED_VIDEO_TYPES = [
+    'video/mp4',
+    'video/mpeg',
+    'video/quicktime',
+    'video/x-msvideo', // .avi
+    'video/x-ms-wmv',  // .wmv
+    'video/webm'
+]
 
 export default defineEventHandler(async (event) => {
     try {
@@ -28,55 +33,49 @@ export default defineEventHandler(async (event) => {
             })
         }
 
-        const videoFile = form.find(item => item.name === 'video')
+        const fileData = form.find(item => item.name === 'video')
 
-        if (!videoFile) {
+        if (!fileData) {
             throw createError({
                 statusCode: 400,
-                statusMessage: 'Video file is required'
+                statusMessage: 'No video file found in upload'
             })
         }
 
-        // Validate file type
-        if (!ALLOWED_TYPES.includes(videoFile.type)) {
+        // Check file size
+        if (fileData.data.length > MAX_FILE_SIZE) {
             throw createError({
-                statusCode: 400,
-                statusMessage: 'Invalid file type. Only video files are allowed.'
+                statusCode: 413,
+                statusMessage: 'File too large. Maximum size is 1024MB'
             })
         }
 
-        // Validate file size
-        if (videoFile.data.length > MAX_FILE_SIZE) {
+        // Check if it's a video file
+        if (!ALLOWED_VIDEO_TYPES.includes(fileData.type)) {
             throw createError({
                 statusCode: 400,
-                statusMessage: 'File too large. Maximum size is 100MB.'
+                statusMessage: 'Only video files are allowed'
             })
         }
 
-        // Create upload directory if it doesn't exist
-        if (!existsSync(UPLOAD_DIR)) {
-            await mkdir(UPLOAD_DIR, { recursive: true })
-        }
+        // Generate UUID
+        const uuid = randomUUID()
 
-        // Generate unique filename
-        const fileExtension = path.extname(videoFile.filename || '.mp4')
-        const uniqueFilename = `${randomUUID()}${fileExtension}`
-        const filePath = path.join(UPLOAD_DIR, uniqueFilename)
+        // Create directory path
+        const uploadDir = path.join(process.cwd(), 'public', 'data', 'uploads', uuid)
+        const filePath = path.join(uploadDir, 'video.mp4')
 
-        // Save file
-        await writeFile(filePath, videoFile.data)
+        // Create directory if it doesn't exist
+        await fs.mkdir(uploadDir, { recursive: true })
 
-        // Return success response
+        // Save the file
+        await fs.writeFile(filePath, fileData.data)
+
         return {
             success: true,
+            uuid,
             message: 'Video uploaded successfully',
-            data: {
-                filename: uniqueFilename,
-                originalName: videoFile.filename,
-                size: videoFile.data.length,
-                type: videoFile.type,
-                path: filePath
-            }
+            path: `/data/uploads/${uuid}/video.mp4`
         }
 
     } catch (error) {
@@ -88,7 +87,7 @@ export default defineEventHandler(async (event) => {
 
         throw createError({
             statusCode: 500,
-            statusMessage: 'Internal server error'
+            statusMessage: 'Internal server error during upload'
         })
     }
 })
