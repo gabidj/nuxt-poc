@@ -93,12 +93,18 @@ const formatDuration = (seconds) => {
   return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`
 }
 
+
 const fetchTranscript = async () => {
   loading.value = true
   error.value = false
 
+
+  const id = useRoute().query?.file
+
+
+
   try {
-    const response = await fetch('/api/transcript/id-demo-result')
+    const response = await fetch(`/api/result/${id}/transcript`)
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
