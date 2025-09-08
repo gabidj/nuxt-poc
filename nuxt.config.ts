@@ -12,5 +12,9 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/image'],
   vite: {
   },
-  pages: true
+  pages: true,
+  runtimeConfig: {
+    // Private keys (only available on server-side)
+    openAiKey: process.env.OPENAI_API_KEY,
+  }
 })

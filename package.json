@@ -14,7 +14,9 @@
     "@nuxt/eslint": "^1.9.0",
     "@nuxt/image": "^1.11.0",
     "eslint": "^9.34.0",
+    "multer": "^2.0.2",
     "nuxt": "^4.1.0",
+    "openai": "^5.19.1",
     "vitest": "^3.2.4",
     "vue": "^3.5.20",
     "vue-router": "^4.5.1"
