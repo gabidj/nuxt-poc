@@ -1,0 +1,34 @@
+{
+  "quiz": [
+    {
+      "question": "What is the primary reason the presenters emphasize setting up and testing equipment well before a webcast?",
+      "options": [
+        "To reduce licensing costs for Wirecast",
+        "To eliminate last-minute issues and reduce unnecessary stress",
+        "To ensure the camera batteries last longer",
+        "To automatically upgrade the broadcasting software"
+      ],
+      "correct_answer_index": 1
+    },
+    {
+      "question": "When connecting audio to the camera, which input level should typically be used for a wireless handheld microphone receiver?",
+      "options": [
+        "Line level",
+        "Phono level",
+        "Mic level",
+        "Speaker level"
+      ],
+      "correct_answer_index": 2
+    },
+    {
+      "question": "According to the webinar, what is a good rule of thumb for upload speed relative to your chosen video bitrate?",
+      "options": [
+        "Upload speed equal to the video bitrate",
+        "Upload speed 2x the video bitrate",
+        "Upload speed 3x the video bitrate",
+        "Upload speed 5–10x the video bitrate"
+      ],
+      "correct_answer_index": 3
+    }
+  ]
+}

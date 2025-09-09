@@ -20,6 +20,7 @@
         <LongDescriptionCard :loading="cardsLoading" />
         <AgendaCard :loading="cardsLoading" />
         <TranscriptCard :loading="cardsLoading" />
+        <QuizCard :loading="cardsLoading" />
     </div>
   </div>
 </template>
@@ -31,6 +32,7 @@ import ShortDescriptionCard from "../components/cards/ShortDescriptionCard"
 import LongDescriptionCard from "../components/cards/LongDescriptionCard"
 import AgendaCard from "../components/cards/AgendaCard"
 import TranscriptCard from "../components/cards/TranscriptCard"
+import QuizCard from "../components/cards/QuizCard.vue";
 
 // const { data } = await useFetch('/api/hello')
 const params = useRoute().query.file
