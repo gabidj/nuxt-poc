@@ -58,7 +58,6 @@
 
       <div v-if="agendaData.items.length > 0" class="flex items-center justify-between pt-4 border-t border-gray-100 text-xs text-gray-500">
         <span>{{ agendaData.items.length }} agenda items</span>
-        <span>{{ formatDuration(totalDuration) }} total duration</span>
       </div>
     </div>
   </div>
@@ -75,11 +74,6 @@ const agendaData = ref(null)
 const displayedItems = computed(() => {
   if (!agendaData.value?.items) return []
   return showFullAgenda.value ? agendaData.value.items : agendaData.value.items.slice(0, 3)
-})
-
-const totalDuration = computed(() => {
-  if (!agendaData.value?.items?.length) return 0
-  return agendaData.value.items.reduce((total, item) => total + item.duration, 0)
 })
 
 const formatTime = (seconds) => {
@@ -104,15 +98,16 @@ const fetchAgenda = async () => {
   loading.value = true
   error.value = false
 
-  try {
-    const response = await fetch('/api/agenda/id-demo-result')
+  const id = useRoute().query?.file
 
+  try {
+    const response = await fetch(`/api/result/${id}/details`)
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)
     }
 
     const data = await response.json()
-    agendaData.value = data
+    agendaData.value = data.agenda
   } catch (err) {
     console.error('Failed to fetch agenda:', err)
     error.value = true

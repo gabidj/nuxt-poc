@@ -1,62 +1,60 @@
-import {isStringObject} from "node:util/types";
-import { existsSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { readFile } from 'fs/promises'
+import { existsSync } from 'fs'
+import path from 'path'
 
-function timeToSeconds(timeStr :string) : number {
-    const [minutes, rest] = timeStr.split(":");
-    const seconds = parseFloat(rest);
-    return parseInt(minutes, 10) * 60 + parseInt(seconds);
+function formatTime(seconds) {
+    const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+    const secs = (seconds % 60).toFixed(2).padStart(5, '0');
+    return `${mins}:${secs}`;
 }
 
-function parseLine(line :string) {
-    const regex = /^\[(\d{2}:\d{2}\.\d{3}) --> (\d{2}:\d{2}\.\d{3})\]\s+(.*)$/;
-    const match = line.match(regex);
-    if (match) {
-        const [, startTime, endTime, content] = match;
-        return {
-            startTime,
-            endTime,
-            startSeconds: timeToSeconds(startTime),
-            endSeconds: timeToSeconds(endTime),
-            text: content.trim()
-        }
-    }
-}
-
-function parseTranscript(fileContents: string) {
-    return fileContents.split('\n').map(line => parseLine(line)).filter(line => line !== undefined);
-}
-
-export default defineEventHandler((event) => {
+export default defineEventHandler(async (event) => {
     const id = getRouterParam(event, 'id')
 
-    if (!id || isStringObject(id)) throw createError({})
-
-    // if file exists data/{id}/output.txt
-    const filePath = join(process.cwd(), 'data', id, 'output.txt');
-
-    if (!existsSync(filePath)) {
+    if (!id) {
         throw createError({
-            statusCode: 404,
-            statusMessage: 'Output file not found'
+            statusCode: 400,
+            statusMessage: 'ID parameter is required'
         })
     }
-    const fileContent = readFileSync(filePath, 'utf-8');
-    parseTranscript(fileContent);
+
+    const transcriptPath = path.join(process.cwd(), 'public', 'data', 'uploads', id, 'transcript', 'whisper.json')
+
+    if (!existsSync(transcriptPath)) {
+        throw createError({
+            statusCode: 404,
+            statusMessage: 'Transcript file not found'
+        })
+    }
 
     try {
-        const fileContent = readFileSync(filePath, 'utf-8');
+        const fileContent = await readFile(transcriptPath, 'utf-8')
+        const whisperData = JSON.parse(fileContent)
+
+        // Helper function to convert time format to seconds
+        const timeToSeconds = (timeFloat) => {
+            return Math.floor(timeFloat)
+        }
+
+        // Parse segments into the required format
+        const transcript = whisperData.segments.map(segment => ({
+            startTime: formatTime(segment.start),
+            endTime: formatTime(segment.end),
+            startSeconds: timeToSeconds(segment.start),
+            endSeconds: timeToSeconds(segment.end),
+            text: segment.text.trim()
+        }))
 
         return {
-            hello2: 'world',
             id,
-            transcript: parseTranscript(fileContent),
-            rawContent: fileContent
+            transcript,
+            rawContent: whisperData
         }
+
     } catch (error) {
         throw createError({
             statusCode: 500,
-            statusMessage: 'Failed to read output file'
+            statusMessage: 'Failed to parse transcript file'
         })
     }
 })

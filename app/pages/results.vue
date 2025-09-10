@@ -9,12 +9,20 @@
       </p>
     </div>
 
-    <div>
-      Video Preview
-    </div>
+    <div v-if="identifier" class="mt-6">
+      <div class="bg-white rounded-lg shadow-sm border p-4 mb-8">
+        <h4 class="text-lg font-medium text-gray-900 mb-3">Video Preview</h4>
+        <video
+          :src="`/data/uploads/${identifier}/video.mp4`"
+          controls
+          class="max-w-full h-auto rounded-lg shadow-sm"
+          style="max-height: 400px;"
+        >
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!--        <ScreenshotCard :loading="cardsLoading" />-->
         <SummaryCard :loading="cardsLoading" />
         <ShortDescriptionCard :loading="cardsLoading" />
         <LongDescriptionCard :loading="cardsLoading" />
@@ -23,7 +31,7 @@
         <QuizCard :loading="cardsLoading" />
     </div>
   </div>
-</template>
+</div></template>
 
 <script setup>
 // import ScreenshotCard from "../components/cards/ScreenshotCard"
@@ -46,6 +54,7 @@ const processVideo = async (file) => {
 const isProcessing = ref(false)
 const showCards = ref(false)
 const cardsLoading = ref(true)
+const identifier = useRoute().query.file
 
 const handleVideoUpload = async (file) => {
   isProcessing.value = true

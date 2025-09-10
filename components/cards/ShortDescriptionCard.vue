@@ -75,8 +75,10 @@ const fetchInfo = async () => {
   loading.value = true
   error.value = false
 
+  const id = useRoute().query?.file
+
   try {
-    const response = await fetch('/api/info/id-demo-result')
+    const response = await fetch(`/api/result/${id}/details`)
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)

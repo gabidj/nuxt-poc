@@ -234,7 +234,8 @@ const fetchQuiz = async () => {
       throw new Error('No file ID found in route parameters')
     }
 
-    const response = await fetch(`/api/result/${id}/quiz`)
+
+    const response = await fetch(`/api/result/${id}/details`)
 
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`)

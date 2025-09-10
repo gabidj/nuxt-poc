@@ -204,19 +204,28 @@
           </div>
         </div>
       </div>
+
+      <!-- Next Step Button -->
+      <div class="text-center mt-8">
+        <button
+          v-if="allProcessesComplete"
+          class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
+          @click="navigateToResults"
+        >
+          Next Step
+        </button>
+        <div v-else class="text-gray-500">
+          Processing... Please wait for all steps to complete.
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import SummaryCard from "../components/cards/SummaryCard"
-import ShortDescriptionCard from "../components/cards/ShortDescriptionCard"
-import LongDescriptionCard from "../components/cards/LongDescriptionCard"
-import AgendaCard from "../components/cards/AgendaCard"
-import TranscriptCard from "../components/cards/TranscriptCard"
-import QuizCard from "../components/cards/QuizCard.vue"
 
 const identifier = useRoute().query.file
+const router = useRouter()
 
 // Processing states
 const processing = ref({
@@ -239,6 +248,14 @@ const failed = ref({
   transcript: false,
   details: false
 })
+
+// Computed property to check if all processes are complete
+const allProcessesComplete = computed(() => {
+  return completed.value.audio && completed.value.frames && completed.value.transcript && completed.value.details
+})
+
+// Auto-redirect timer
+let redirectTimer = null
 
 // Start processing function
 const startProcessing = async (type) => {
@@ -280,6 +297,24 @@ const startProcessing = async (type) => {
     processing.value[type] = false
   }
 }
+
+// Navigation function
+const navigateToResults = () => {
+  if (redirectTimer) {
+    clearTimeout(redirectTimer)
+  }
+  router.push(`/results?file=${identifier}`)
+}
+
+// Watch for all processes completion to start auto-redirect
+watch(allProcessesComplete, (isComplete) => {
+  if (isComplete) {
+    // Start 3-second countdown for auto-redirect
+    redirectTimer = setTimeout(() => {
+      navigateToResults()
+    }, 3000)
+  }
+})
 
 // Auto-start processing on mount
 onMounted(() => {
