@@ -1,4 +1,4 @@
-<!-- Nuxt + Vue VideoUpload component with redirect to /step2?file={id} after upload -->
+<!-- Nuxt + Vue VideoUpload component with chunked upload support -->
 <template>
   <div class="max-w-2xl mx-auto">
     <!-- Error Message -->
@@ -72,7 +72,9 @@
 
         <div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Uploading Video...</h3>
-          <p class="text-gray-600 mb-4">Please wait while we upload your video</p>
+          <p class="text-gray-600 mb-4">
+            {{ uploadStatus || 'Please wait while we upload your video' }}
+          </p>
 
           <!-- Progress Bar -->
           <div class="w-full bg-gray-200 rounded-full h-2 mb-4">
@@ -102,7 +104,6 @@
           <p class="text-sm text-gray-500 mb-2">{{ formatFileSize(uploadedFile.size) }}</p>
           <p class="text-sm text-primary-600">UUID: {{ uploadResult.uuid }}</p>
           <p class="text-sm text-gray-500">Path: {{ uploadResult.path }}</p>
-          <p class="text-sm text-primary-600">UUID: {{ uploadResult.uuid }}</p>
           <button
             class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors"
             @click="router.push(`/step2?file=${uploadResult.uuid}`)"
@@ -154,9 +155,13 @@ const progress = ref(0)
 const isProcessing = ref(false)
 const uploadResult = ref(null)
 const error = ref(null)
+const uploadStatus = ref('')
+const currentChunk = ref(0)
+const totalChunks = ref(0)
 
 // Constants
-const maxFileSize = 1024 * 1024 * 1024 // 1024MB
+const maxFileSize = 5 * 1024 * 1024 * 1024 // 5GB
+const chunkSize = 10 * 1024 * 1024 // 10MB chunks
 const acceptedTypes = 'video/*'
 
 // Computed properties
@@ -168,7 +173,7 @@ const uploadAreaClasses = computed(() => ({
 }))
 
 const acceptedTypesText = computed(() => {
-  return 'Videos supported (MP4, MOV, AVI, WebM, etc.) - Max 1024MB'
+  return 'Videos supported (MP4, MOV, AVI, WebM, etc.) - Max 5GB'
 })
 
 // Methods
@@ -218,6 +223,7 @@ const handleFiles = async (files) => {
   uploadedFile.value = file
   isProcessing.value = true
   progress.value = 0
+  uploadStatus.value = 'Preparing upload...'
 
   // Create video preview
   if (isVideoFile(file)) {
@@ -226,37 +232,75 @@ const handleFiles = async (files) => {
   }
 
   try {
-    await uploadFile(file)
+    await uploadFileInChunks(file)
   } catch (err) {
     error.value = err.message || 'Upload failed'
     isProcessing.value = false
+    uploadStatus.value = ''
   }
 }
 
-const uploadFile = async (file) => {
-  const formData = new FormData()
-  formData.append('video', file)
+const uploadFileInChunks = async (file) => {
+  const chunks = Math.ceil(file.size / chunkSize)
+  totalChunks.value = chunks
 
   try {
-    // Simulate progress during upload
-    const progressInterval = setInterval(() => {
-      progress.value = Math.min(progress.value + Math.random() * 10, 90)
-    }, 200)
-
-    const response = await $fetch('/api/upload', {
+    // Initialize upload session
+    uploadStatus.value = 'Initializing upload...'
+    const initResponse = await $fetch('/api/upload/init', {
       method: 'POST',
-      body: formData,
+      body: {
+        fileName: file.name,
+        fileSize: file.size,
+        fileType: file.type,
+        totalChunks: chunks
+      }
     })
 
-    clearInterval(progressInterval)
-    progress.value = 100
-    uploadResult.value = response
-    isProcessing.value = false
+    const { uploadId, uuid } = initResponse
 
-    console.log('Upload successful:', response)
-  } catch (err) {
-    error.value = err.data?.statusMessage || err.message || 'Upload failed'
+    // Upload chunks
+    for (let chunkIndex = 0; chunkIndex < chunks; chunkIndex++) {
+      currentChunk.value = chunkIndex + 1
+      uploadStatus.value = `Uploading chunk ${chunkIndex + 1} of ${chunks}...`
+
+      const start = chunkIndex * chunkSize
+      const end = Math.min(start + chunkSize, file.size)
+      const chunk = file.slice(start, end)
+
+      const formData = new FormData()
+      formData.append('chunk', chunk)
+      formData.append('uploadId', uploadId)
+      formData.append('chunkIndex', chunkIndex.toString())
+      formData.append('totalChunks', chunks.toString())
+
+      await $fetch('/api/upload/chunk', {
+        method: 'POST',
+        body: formData
+      })
+
+      // Update progress
+      progress.value = ((chunkIndex + 1) / chunks) * 90 // Reserve 10% for finalization
+    }
+
+    // Finalize upload
+    uploadStatus.value = 'Finalizing upload...'
+    const finalResponse = await $fetch('/api/upload/finalize', {
+      method: 'POST',
+      body: {
+        uploadId,
+        uuid
+      }
+    })
+
+    progress.value = 100
+    uploadResult.value = finalResponse
     isProcessing.value = false
+    uploadStatus.value = ''
+
+    console.log('Upload successful:', finalResponse)
+  } catch (err) {
+    console.error('Chunked upload error:', err)
     throw err
   }
 }
@@ -267,6 +311,9 @@ const resetUpload = () => {
   progress.value = 0
   uploadResult.value = null
   error.value = null
+  uploadStatus.value = ''
+  currentChunk.value = 0
+  totalChunks.value = 0
 
   // Clear file input
   const fileInput = document.querySelector('input[type="file"]')
