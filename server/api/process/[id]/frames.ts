@@ -79,7 +79,7 @@ const getFirstAndLastFrames = async (framesDir: string): Promise<{ firstFrame: s
 export default defineEventHandler(async (event) => {
     try {
         // Only allow GET requests
-        if (getMethod(event) !== 'GET') {
+        if (getMethod(event) !== 'POST') {
             throw createError({
                 statusCode: 405,
                 statusMessage: 'Method not allowed'

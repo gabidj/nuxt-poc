@@ -5,38 +5,39 @@
         Video Analysis Platform
       </h1>
       <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Upload your video and get instant insights with AI-powered analysis
+        ID: {{ params }}
       </p>
     </div>
 
-    <VideoUpload
-      :is-processing="isProcessing"
-      @video-uploaded="handleVideoUpload"
-    />
+    <div>
+      Video Preview
+    </div>
 
-    <div v-if="showCards" class="mt-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <ScreenshotCard :loading="cardsLoading" />
+<!--        <ScreenshotCard :loading="cardsLoading" />-->
         <SummaryCard :loading="cardsLoading" />
         <ShortDescriptionCard :loading="cardsLoading" />
         <LongDescriptionCard :loading="cardsLoading" />
         <AgendaCard :loading="cardsLoading" />
         <TranscriptCard :loading="cardsLoading" />
-      </div>
+        <QuizCard :loading="cardsLoading" />
     </div>
   </div>
 </template>
 
 <script setup>
-import VideoUpload from "../components/VideoUpload";
-import ScreenshotCard from "../components/cards/ScreenshotCard"
+// import ScreenshotCard from "../components/cards/ScreenshotCard"
 import SummaryCard from "../components/cards/SummaryCard"
 import ShortDescriptionCard from "../components/cards/ShortDescriptionCard"
 import LongDescriptionCard from "../components/cards/LongDescriptionCard"
 import AgendaCard from "../components/cards/AgendaCard"
 import TranscriptCard from "../components/cards/TranscriptCard"
+import QuizCard from "../components/cards/QuizCard.vue";
 
+// const { data } = await useFetch('/api/hello')
+const params = useRoute().query.file
 
+// const { processVideo } = useVideoProcessing()
 const processVideo = async (file) => {
   // Simulate video processing delay
   return new Promise((resolve) => setTimeout(resolve, 200))

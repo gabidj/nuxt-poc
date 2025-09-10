@@ -88,7 +88,7 @@ const getAudioInfo = async (audioPath: string): Promise<{ duration: string | nul
 export default defineEventHandler(async (event) => {
     try {
         // Only allow GET requests
-        if (getMethod(event) !== 'GET') {
+        if (getMethod(event) !== 'POST') {
             throw createError({
                 statusCode: 405,
                 statusMessage: 'Method not allowed'

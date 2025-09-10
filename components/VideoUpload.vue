@@ -1,3 +1,4 @@
+<!-- Nuxt + Vue VideoUpload component with redirect to /step2?file={id} after upload -->
 <template>
   <div class="max-w-2xl mx-auto">
     <!-- Error Message -->
@@ -101,6 +102,16 @@
           <p class="text-sm text-gray-500 mb-2">{{ formatFileSize(uploadedFile.size) }}</p>
           <p class="text-sm text-primary-600">UUID: {{ uploadResult.uuid }}</p>
           <p class="text-sm text-gray-500">Path: {{ uploadResult.path }}</p>
+          <p class="text-sm text-primary-600">UUID: {{ uploadResult.uuid }}</p>
+          <button
+            class="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors"
+            @click="router.push(`/step2?file=${uploadResult.uuid}`)"
+          >
+            <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+            Continue to Step 2
+          </button>
         </div>
 
         <button
@@ -131,6 +142,9 @@
 
 <script setup>
 import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 // Reactive data
 const isDragOver = ref(false)
