@@ -143,7 +143,7 @@ export default defineEventHandler(async (event) => {
                 duration: audioInfo.duration,
                 size: audioInfo.size,
                 format: 'm4a',
-                bitrate: '96kbps'
+                bitrate: '48kbps'
             }
         }
 
@@ -152,7 +152,7 @@ export default defineEventHandler(async (event) => {
             '-i', videoPath,
             '-vn', // No video
             '-acodec', 'aac', // AAC codec for M4A
-            '-b:a', '96k', // Audio bitrate 96kbps
+            '-b:a', '48k', // Audio bitrate 96kbps
             '-f', 'mp4', // MP4 container (M4A is MP4 with audio only)
             '-y', // Overwrite output file if it exists
             audioPath
@@ -193,7 +193,7 @@ export default defineEventHandler(async (event) => {
             duration: audioInfo.duration,
             size: audioInfo.size,
             format: 'm4a',
-            bitrate: '96kbps'
+            bitrate: '48kbps'
         }
 
     } catch (error: any) {
