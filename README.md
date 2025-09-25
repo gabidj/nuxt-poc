@@ -1,3 +1,20 @@
+# AI Video Analyser
+
+Fill in the OPEN AI key in .env (see .env.example)
+
+Run:
+`npm run dev`
+
+
+Troubleshooting:
+The following error can be recovered if data folder is cleared out. 
+```
+ ERROR  Error: spawn EBADF                                    nitro 1:10:53 PM
+
+
+undefined
+```
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
