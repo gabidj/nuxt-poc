@@ -28,15 +28,6 @@
 </template>
 
 <script setup>
-import VideoUpload from "../components/VideoUpload";
-import ScreenshotCard from "../components/cards/ScreenshotCard"
-import SummaryCard from "../components/cards/SummaryCard"
-import ShortDescriptionCard from "../components/cards/ShortDescriptionCard"
-import LongDescriptionCard from "../components/cards/LongDescriptionCard"
-import AgendaCard from "../components/cards/AgendaCard"
-import TranscriptCard from "../components/cards/TranscriptCard"
-
-
 const processVideo = async (file) => {
   // Simulate video processing delay
   return new Promise((resolve) => setTimeout(resolve, 200))

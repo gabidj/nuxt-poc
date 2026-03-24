@@ -11,21 +11,21 @@
   },
   "dependencies": {
     "@heroicons/vue": "^2.2.0",
-    "@nuxt/eslint": "^1.9.0",
+    "@nuxt/eslint": "^1.15.2",
     "@nuxt/image": "^1.11.0",
-    "eslint": "^9.34.0",
-    "multer": "^2.0.2",
-    "nuxt": "^4.1.0",
-    "openai": "^5.19.1",
+    "eslint": "^9.39.4",
+    "multer": "^2.1.1",
+    "nuxt": "^4.4.2",
+    "openai": "^5.23.2",
     "vitest": "^3.2.4",
-    "vue": "^3.5.20",
-    "vue-router": "^4.5.1"
+    "vue": "^3.5.30",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
-    "@types/node": "^24.3.1",
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17",
+    "@types/node": "^24.12.0",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^3.4.19",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }

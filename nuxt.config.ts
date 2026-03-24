@@ -2,12 +2,14 @@
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  components: [
-    {
-      path: '~/components',
-      pathPrefix: false,
-    },
-  ],
+  components: {
+    dirs: [
+      {
+        path: '~/components',
+        pathPrefix: false,
+      },
+    ],
+  },
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/image'],
   vite: {
